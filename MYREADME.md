@@ -14,7 +14,7 @@ I will outline my rough plans for this repository here.
    b. Mobile (responsive)
 5. Start coding!!!!
 
-User Persona's
+!User Persona's
 See _persona's_ folder for more details
 
 1. Employer
@@ -28,3 +28,5 @@ See _persona's_ folder for more details
 3. Recruitment Agent
    Sue Pollock is a recruitment agent who works for a medium size recruitment agency, also known as headhunters. She is looking for a junior web developer to join a software development company. She is looking for someone who has good team productivity and communication skills.
    Sue often uses all social mediia platforms to find new candidates, but LinkedIn is her most used.
+
+!Flow chart added for the basic flow of the website. Including the elements that will be used, and links to other pages.
