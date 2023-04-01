@@ -30,3 +30,14 @@ See _persona's_ folder for more details
    Sue often uses all social mediia platforms to find new candidates, but LinkedIn is her most used.
 
 !Flow chart added for the basic flow of the website. Including the elements that will be used, and links to other pages.
+
+!The idea behind my design is taken from many different components, the user persona's, some guest speaker's we have listened to, some website's I have used for inspriation and some of my own taste and preferences.
+One of the main things I wanted to address is standing out from the crowd, as I heard from a speaker the other day. I am planning on going for a bold looking website that is easy to navigate through, make its visually appealing and not cluttered.
+
+In terms of thinking about the user persona's I'm looking to address the Employer and REcruitment Agent in a similar way. I want the home screen to pop out and make an impression from the first time they enter the website. I want it to be easy to navigate through to the products and have multiple ways to contact me through social media, email and a contact form.
+
+I will add a little different things in for the fellow developer, maybe a few easter eggs so to speak, but nothing too fancy, a couple of animations and hover effects should be enough.
+
+I will decide on my colours through some research into what coulours are used for creativity and to stand out. I personally like a darker website that pops with a sharp colour or two, so this is the direction I will be going in.
+
+The website will consist of a homepage, with an about me section, a navbar with a contact link and a logo, and a footer containing the social media links. There will also be a projects page with 3 projects on it as to not clutter the page. Each project will have a link to the github repo and a link to the live site if there is one. There will also be a contact page with a contact form. The contact form layout has taken inspiration from the Facebook homepage layout.
