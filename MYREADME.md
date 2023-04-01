@@ -41,3 +41,7 @@ I will add a little different things in for the fellow developer, maybe a few ea
 I will decide on my colours through some research into what coulours are used for creativity and to stand out. I personally like a darker website that pops with a sharp colour or two, so this is the direction I will be going in.
 
 The website will consist of a homepage, with an about me section, a navbar with a contact link and a logo, and a footer containing the social media links. There will also be a projects page with 3 projects on it as to not clutter the page. Each project will have a link to the github repo and a link to the live site if there is one. There will also be a contact page with a contact form. The contact form layout has taken inspiration from the Facebook homepage layout.
+
+I have decided on a mainly black website with pink accents to the page to highlight certain parts or when elements are hovered etc.
+
+!Added desktop_main_high wireframe, still getting used to figma, but I assume it has no animations and there's certain things I will be doing on the actual website that I can't in Figma. For example the angled text will straighten out when hovered and one or two with me connected to the link for other parts on the page, they will animate or change colour(hopefully) when interacted with.
