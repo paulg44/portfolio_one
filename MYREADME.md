@@ -49,3 +49,27 @@ I have decided on a mainly black website with pink accents to the page to highli
 !Added the desktop_projects_high wireframe this differs quite a bit from the low fidelity wireframe as i thought it looked too boxy and not creative enough. Again, I will be adding animations and hover effects to the page, but I will be doing this in code rather than in Figma. The titles of each page will have pink underline's and will also be links to the actual websites. The image of the mobile phone will rotate with 3 other images at timed intervals. The round github images will be replaced with a gihub icon thats also a link to the corresponding github repo. I've decided not to clutter the page with any images of the other projects, just descriptions and links. This is something I may revisit later on.
 
 !Added the desktop_contact_high wireframe. I will propably change the background to an image, or a linear gradient, just as to have a change from the pure black on the other two pages. There will be a couple of animations on the email and phone icon's.
+
+Coding Plan
+HTML
+
+1. Create the index page
+   a. Add navbar
+   b. Add about me section
+   c. Add footer
+   d. Add social media links
+   e. Add projects link
+2. Create the projects page
+   a. Add projects to page
+3. Create the contact page
+   a. Add email
+   b. Add phone number
+   c. Add contact form
+
+CSS
+
+1. Add root styles
+2. Add utility classes
+3. Style Homepage
+4. Style Projects page
+5. Style Contact page

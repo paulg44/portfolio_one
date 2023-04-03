@@ -1,0 +1,18 @@
+/* Root CSS Variables */
+:root {
+  --bright-color: #ff9ee5;
+  --dark-color: #010101;
+  --light-color: #f4f4f4;
+  --grey-color: #444544;
+}
+
+/* Body CSS */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+img {
+  width: 10%;
+}
