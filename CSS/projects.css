@@ -1,0 +1,7 @@
+/* CSS File for projects page */
+
+/* Header */
+h2 {
+  font-size: 80px;
+  transform: rotate(270deg);
+}
