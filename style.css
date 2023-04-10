@@ -1,6 +1,6 @@
 /* Root CSS Variables */
 :root {
-  --bright-color: #ff9ee5;
+  --bright-color: #fd96e1;
   --dark-color: #010101;
   --light-color: #f4f4f4;
   --grey-color: #444544;
@@ -42,6 +42,11 @@ img {
 }
 
 /* Navbar */
+.navbar {
+  /* For some reason without the border top I get a grey thick line above the navbar??? */
+  border-top: 1px solid #010101;
+}
+
 .nav-links {
   display: flex;
   justify-content: space-between;
@@ -54,6 +59,11 @@ img {
 
 .nav-links .logo {
   transform: rotate(-10deg);
+}
+
+/* Contact Hover */
+.nav-links .contact-button:hover {
+  border-bottom: 2px solid var(--bright-color);
 }
 
 /* Main Section */
@@ -91,49 +101,43 @@ img {
 
 /* Styling for angled text */
 .angled-text {
-  position: relative;
+  position: absolute;
   left: 500px;
   top: 170px;
 }
 
 .angled-text p {
-  position: absolute;
-  margin: 10px 0;
+  margin-top: 20px;
   transition: all 2s ease-in-out;
 }
 
 /* Individual p tag styling */
 .angled-text p:nth-child(1) {
   transform: rotate(-10deg);
-  top: 10px;
-  left: -100px;
 }
 .angled-text p:nth-child(2) {
   transform: rotate(-15deg);
-  left: 35px;
 }
 .angled-text p:nth-child(3) {
   transform: rotate(5deg);
-  left: -120px;
-  top: 60px;
 }
 .angled-text p:nth-child(4) {
   transform: rotate(-3deg);
-  top: 95px;
-  left: 100px;
 }
 .angled-text p:nth-child(5) {
   transform: rotate(20deg);
-  left: -50px;
-  top: 115px;
 }
 
 /* Hover for p tags */
-.angled-text p:hover {
+.angled-text:hover p {
   transform: rotate(0deg);
 }
 
-.angled-text p:hover ~ .hover-highlight {
+.angled-text .hover-highlight {
+  transition: all 1s ease-in-out;
+}
+
+.angled-text:hover .hover-highlight {
   color: var(--bright-color);
 }
 
@@ -142,6 +146,16 @@ img {
   position: absolute;
   top: 370px;
   right: 180px;
+  transition: opacity 1s ease-in-out;
+}
+
+.projects-link-btn:hover {
+  opacity: 0.8;
+}
+
+.projects-link-btn a {
+  font-family: inherit;
+  color: var(--dark-color);
 }
 
 /* Footer */
@@ -160,4 +174,9 @@ img {
 .social-links i {
   margin: 0 10px;
   color: var(--grey-color);
+  transition: color 1s ease-in-out;
+}
+
+.social-links i:hover {
+  color: var(--bright-color);
 }
