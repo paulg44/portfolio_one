@@ -1,0 +1,49 @@
+/* CSS for Contact Page */
+
+/* Contact Body */
+.contact {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Conatct Details */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  margin: 30px;
+}
+
+.inner-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.inner-container h3 {
+  font-size: 80px;
+  text-transform: uppercase;
+  color: var(--dark-color);
+  text-shadow: -1px 0 var(--bright-color), 0 1px var(--bright-color),
+    1px 0 var(--bright-color), 0 -1px var(--bright-color);
+}
+
+.inner-container a {
+  position: absolute;
+  bottom: 10%;
+  font-weight: bold;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+}
