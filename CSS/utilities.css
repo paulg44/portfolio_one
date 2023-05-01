@@ -37,6 +37,14 @@ button {
   border-radius: 20px;
 }
 
+button:hover {
+  transform: scale(1.03);
+}
+
+button:active {
+  transform: scale 0.97;
+}
+
 img {
   width: 24%;
 }

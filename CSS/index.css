@@ -40,6 +40,12 @@
   margin-left: 250px;
 }
 
+.text-scroll {
+  color: var(--bright-color);
+  position: fixed;
+  margin-top: 7%;
+}
+
 /* Styling for angled text */
 .angled-text {
   margin-left: -500px;

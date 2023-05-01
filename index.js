@@ -8,7 +8,7 @@
 */
 
 // Variables
-const scrollText = document.querySelector(".scroll-text");
+const scrollText = document.querySelector(".text-scroll");
 const textArray = ["Software Developer", "Web Developer", "Web Designer"];
 
 // Function
@@ -20,5 +20,6 @@ function scrollTextFunction() {
     if (i > textArray.length - 1) {
       i = 0;
     }
-  }, 2000);
+  }, 3000);
 }
+scrollTextFunction();
