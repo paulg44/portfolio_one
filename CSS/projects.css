@@ -2,44 +2,85 @@
 
 /* Projects Section */
 .projects {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: space-around;
-  border: 1px solid #fff;
+  margin: 0 5%;
+  height: 70vh;
 }
 
-.projects h3 {
-  font-size: 20px;
-  font-weight: bold;
-  border-bottom: 2px solid var(--bright-color);
+/* Left Project */
+.left-section {
+  width: 30%;
 }
 
-/* Left Side */
 .left-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  border: 1px solid #fff;
+  justify-content: center;
 }
 
 .left-container img {
-  width: 70%;
+  width: 60%;
 }
 
-/* Middle */
+.left-container h3 {
+  margin: 10px 0;
+}
+
+/* Middle Header */
 .middle-section {
-  border: 1px solid #fff;
+  width: 20%;
+  height: 100vh;
 }
 
-/* Header */
-h2 {
-  /* font-size: 80px; */
+.middle-section h2 {
+  position: absolute;
+  bottom: 45%;
+  left: 17%;
   transform: rotate(270deg);
+  font-size: 80px;
+  color: var(--dark-color);
+  text-shadow: -1px 0 var(--bright-color), 0 1px var(--bright-color),
+    1px 0 var(--bright-color), 0 -1px var(--bright-color);
 }
 
-/* Right Side */
-.right-container {
-  border: 1px solid #fff;
-  width: 50%;
+/* Right Project Section */
+.right-section {
+  width: 60%;
+  margin: 0 40px;
+}
+
+.right-section h3 {
+  width: 30%;
+  border-bottom: 2px solid var(--bright-color);
+}
+
+.individual-project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.individual-project p {
+  width: 70%;
+  margin: 10px;
+}
+
+.reverse {
+  align-items: flex-end;
+  border-bottom: 1px solid var(--grey-color);
+  border-top: 1px solid var(--grey-color);
+}
+
+.reverse h3 {
+  text-align: right;
+}
+
+.inner-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
