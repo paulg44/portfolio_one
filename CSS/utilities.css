@@ -16,7 +16,7 @@
 
 /* Body CSS */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: var(--dark-color);
   color: var(--light-color);
 }
@@ -77,14 +77,14 @@ img {
 /* Footer */
 .footer {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   bottom: 0;
   left: 2.5%;
   width: 95%;
   border-top: 2px solid var(--bright-color);
-}
-
-.social-links {
-  margin: 20px;
+  padding: 20px;
 }
 
 .social-links i {
@@ -95,4 +95,24 @@ img {
 
 .social-links i:hover {
   color: var(--bright-color);
+}
+
+.tech-stacks i {
+  margin: 0 10px;
+}
+
+.tech-stacks .fa-react {
+  color: #61dbfb;
+}
+
+.tech-stacks .fa-node-js {
+  color: #6cc24a;
+}
+
+.tech-stacks .fa-html5 {
+  color: #e34c26;
+}
+
+.tech-stacks .fa-css3 {
+  color: #264de4;
 }
