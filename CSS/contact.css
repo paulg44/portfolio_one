@@ -32,14 +32,15 @@
   font-size: 80px;
   text-transform: uppercase;
   color: var(--dark-color);
-  text-shadow: -1px 0 var(--bright-color), 0 1px var(--bright-color),
-    1px 0 var(--bright-color), 0 -1px var(--bright-color);
+  text-shadow: -1px 0 var(--grey-color), 0 1px var(--grey-color),
+    1px 0 var(--grey-color), 0 -1px var(--grey-color);
 }
 
 .inner-container a {
   position: absolute;
   bottom: 10%;
-  font-weight: bold;
+  font-weight: bolder;
+  color: var(--bright-color);
 }
 
 /* Form */

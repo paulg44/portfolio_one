@@ -56,6 +56,25 @@
   transition: all 2s ease-in-out;
 }
 
+/* About */
+.about h3 {
+  font-size: 46px;
+  font-weight: 900;
+  color: var(--dark-color);
+  text-shadow: -1px 0 var(--grey-color), 0 1px var(--grey-color),
+    1px 0 var(--grey-color), 0 -1px var(--grey-color);
+}
+
+.about p {
+  width: 50%;
+  line-height: 1.2;
+}
+
+.about a {
+  color: var(--bright-color);
+  font-size: 1.1rem;
+}
+
 /* Individual p tag styling */
 .angled-text p:nth-child(1) {
   transform: rotate(-10deg);
