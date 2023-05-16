@@ -2,7 +2,77 @@
 
 /* Projects */
 .projects {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  /* border: 2px solid red; */
+  height: 70vh;
+}
+
+.about-projects {
+  position: relative;
+  /* border: 2px solid blue; */
   display: flex;
   align-items: center;
+}
+
+.about-header {
+  position: absolute;
+  right: -25%;
+}
+
+.about-header h2 {
+  /* border: 2px solid purple; */
+  font-size: 4rem;
+  transform: rotate(-90deg);
+  font-weight: 900;
+  color: var(--dark-color);
+  text-shadow: -1px 0 var(--bright-color), 0 1px var(--bright-color),
+    1px 0 var(--bright-color), 0 -1px var(--bright-color);
+}
+
+.about-projects p {
+  width: 70%;
+  text-align: center;
+  margin: 10px;
+}
+
+.projects-list-section {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid green; */
+}
+
+.projects-list {
+  margin: 0 40px;
+}
+
+.projects-list ul {
+  width: 150px;
+}
+
+.projects-list li {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.projects-list i {
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
+}
+
+.main-card-content {
+  display: flex;
+  align-items: center;
+}
+
+.main-card-content p {
+  margin: 20px 0;
+  width: 50%;
 }
