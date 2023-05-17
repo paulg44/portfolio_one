@@ -1,78 +1,104 @@
 /* CSS File for projects page */
 
-/* Projects */
+/* CSS File for projects page */
+
+/* Projects Section */
 .projects {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  /* border: 2px solid red; */
+  display: inline-flex;
+  align-items: center;
+  margin: 0 5%;
   height: 70vh;
 }
 
-.about-projects {
-  position: relative;
-  /* border: 2px solid blue; */
+/* Left Project */
+.left-section {
+  width: 30%;
+}
+
+.left-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.about-header {
+.left-container img {
+  width: 60%;
+}
+
+.left-container h3 {
+  margin: 10px 0;
+}
+
+.left-container p {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Middle Header */
+.middle-section {
+  width: 20%;
+  height: 100vh;
+}
+
+.middle-section h2 {
   position: absolute;
-  right: -25%;
-}
-
-.about-header h2 {
-  /* border: 2px solid purple; */
-  font-size: 4rem;
-  transform: rotate(-90deg);
-  font-weight: 900;
+  bottom: 45%;
+  left: 17%;
+  transform: rotate(270deg);
+  font-size: 80px;
   color: var(--dark-color);
   text-shadow: -1px 0 var(--bright-color), 0 1px var(--bright-color),
     1px 0 var(--bright-color), 0 -1px var(--bright-color);
 }
 
-.about-projects p {
-  width: 70%;
-  text-align: center;
-  margin: 10px;
-}
-
-.projects-list-section {
-  display: flex;
-  align-items: center;
-  /* border: 2px solid green; */
-}
-
-.projects-list {
+/* Right Project Section */
+.right-section {
+  width: 60%;
   margin: 0 40px;
 }
 
-.projects-list ul {
-  width: 150px;
+.right-section h3 {
+  width: 30%;
+  border-bottom: 2px solid var(--bright-color);
 }
 
-.projects-list li {
-  font-size: 1.2rem;
-  margin: 20px 0;
-}
-
-.projects-list i {
-  font-size: 0.8rem;
-  margin-left: 10px;
-}
-
-.project-card {
+.individual-project {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.inner-div p {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.reverse {
+  align-items: flex-end;
+  border-bottom: 1px solid var(--grey-color);
+  border-top: 1px solid var(--grey-color);
+}
+
+.reverse h3 {
+  text-align: right;
+}
+
+.reverse p {
+  text-align: right;
+  margin: 0;
+}
+
+.inner-div {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.main-card-content {
-  display: flex;
-  align-items: center;
-}
-
-.main-card-content p {
-  margin: 20px 0;
-  width: 50%;
+.inner-div img {
+  margin: 0 10px;
+  border-radius: 5px;
 }
