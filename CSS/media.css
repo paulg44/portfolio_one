@@ -1,0 +1,63 @@
+/* Media queries CSS file */
+@media (max-width: 1200px) {
+  /* Body */
+  body {
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  /* Index.html */
+  .main {
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .main img {
+    visibility: hidden;
+  }
+
+  .main-container {
+    display: block;
+    width: fit-content;
+  }
+
+  .main-header p {
+    margin-right: 50px;
+  }
+
+  .text-scroll {
+    text-align: right;
+    margin-top: 23%;
+  }
+
+  .about {
+    margin-top: 50px;
+  }
+
+  .about p {
+    width: auto;
+    margin: 20px 40px;
+  }
+
+  /* Projects */
+  .projects {
+    display: block;
+    margin: 0;
+  }
+
+  .projects img {
+    width: 50%;
+  }
+
+  .middle-section h2 {
+    transform: rotate(0deg);
+  }
+
+  .left-section,
+  .middle-section,
+  .right-section {
+    width: 100%;
+  }
+}

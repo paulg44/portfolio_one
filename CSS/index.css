@@ -121,9 +121,7 @@
 
 /* Text Scroll in Header */
 .text-scroll {
-  animation: slide-in 3s ease-in-out infinite;
-  animation: name duration timing-function delay iteration-count direction
-    fill-mode;
+  animation: slide-in 2.8s ease-in-out infinite;
 }
 
 @keyframes slide-in {

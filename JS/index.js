@@ -20,6 +20,6 @@ function scrollTextFunction() {
     if (i > textArray.length - 1) {
       i = 0;
     }
-  }, 2900);
+  }, 2800);
 }
 scrollTextFunction();
