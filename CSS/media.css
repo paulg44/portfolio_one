@@ -49,15 +49,44 @@
 
   .projects img {
     width: 50%;
+    margin: 10px 0;
+  }
+
+  .left-container p {
+    margin: 10px 40px;
+  }
+
+  .middle-section {
+    height: fit-content;
   }
 
   .middle-section h2 {
     transform: rotate(0deg);
+    margin: 0 20px;
+  }
+
+  .right-section {
+    margin: 0;
   }
 
   .left-section,
   .middle-section,
   .right-section {
-    width: 100%;
+    width: fit-content;
+    margin: 30px 0;
+  }
+
+  .inner-div {
+    flex-direction: column;
+  }
+
+  .inner-div p,
+  .reverse p {
+    margin: 10px 40px;
+  }
+
+  /* Contact */
+  .contact {
+    flex-direction: column;
   }
 }
