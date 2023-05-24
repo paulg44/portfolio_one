@@ -111,9 +111,4 @@
   .contact {
     flex-direction: column;
   }
-
-  /* Footer */
-  .footer {
-    position: relative;
-  }
 }
