@@ -51,6 +51,7 @@
   .projects {
     display: block;
     margin: 0;
+    height: fit-content;
   }
 
   .projects img {
@@ -75,6 +76,12 @@
     margin: 0;
   }
 
+  .right-section h3 {
+    width: 70%;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
   .left-section,
   .middle-section,
   .right-section {
@@ -86,13 +93,27 @@
     flex-direction: column;
   }
 
+  .reverse {
+    align-items: flex-start;
+  }
+
+  .reverse h3 {
+    text-align: left;
+  }
+
   .inner-div p,
   .reverse p {
     margin: 10px 40px;
+    text-align: center;
   }
 
   /* Contact */
   .contact {
     flex-direction: column;
+  }
+
+  /* Footer */
+  .footer {
+    position: relative;
   }
 }
