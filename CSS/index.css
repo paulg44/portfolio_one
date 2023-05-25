@@ -32,8 +32,7 @@
   font-size: 56px;
   font-weight: 900;
   color: var(--dark-color);
-  text-shadow: -1px 0 var(--bright-color), 0 1px var(--bright-color),
-    1px 0 var(--bright-color), 0 -1px var(--bright-color);
+  text-shadow: -1px 0 #fc95e1, 0 1px #fc95e1, 1px 0 #fc95e1, 0 -1px #fc95e1;
 }
 
 .main-header p {

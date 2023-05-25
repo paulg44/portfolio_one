@@ -30,16 +30,16 @@
   }
 
   .main-header p {
-    margin-right: 50px;
+    margin: 5px 0;
   }
 
   .text-scroll {
-    text-align: right;
-    margin-top: 23%;
+    position: relative;
+    /* margin-top: 23%; */
   }
 
   .about {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .about p {
@@ -110,5 +110,6 @@
   /* Contact */
   .contact {
     flex-direction: column;
+    height: 100vh;
   }
 }
