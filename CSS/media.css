@@ -35,11 +35,12 @@
 
   .text-scroll {
     position: relative;
-    /* margin-top: 23%; */
+    animation-delay: 1s;
   }
 
   .about {
     margin-top: 50px;
+    animation: fade-in 2s ease-in;
   }
 
   .about p {
@@ -54,9 +55,19 @@
     height: fit-content;
   }
 
+  .projects h3 {
+    animation: fade-in 2s ease-in;
+  }
+
+  .projects p {
+    font-size: 16px;
+    animation: fade-in 3s ease-in;
+  }
+
   .projects img {
     width: 50%;
     margin: 10px 0;
+    animation: fade-in 1s ease-in;
   }
 
   .left-container p {
@@ -70,6 +81,7 @@
   .middle-section h2 {
     transform: rotate(0deg);
     margin: 0 20px;
+    animation: fade-in 4s ease-in;
   }
 
   .right-section {
@@ -111,5 +123,22 @@
   .contact {
     flex-direction: column;
     height: 100vh;
+    width: fit-content;
+    animation: fade-in 1.5s ease-in;
+  }
+
+  .inner-container {
+    margin: 0;
+    width: fit-content;
+  }
+
+  /* Animations */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }

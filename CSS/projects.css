@@ -17,6 +17,7 @@
 /* Left Project */
 .left-section {
   width: 30%;
+  animation: fade-in 2s ease-in;
 }
 
 .left-container {
@@ -32,6 +33,7 @@
 
 .left-container h3 {
   margin: 10px 0;
+  border-bottom: 2px solid var(--bright-color);
 }
 
 .left-container p {
@@ -54,6 +56,7 @@
 .middle-section {
   width: 20%;
   height: 100vh;
+  animation: fade-in 3s ease-in;
 }
 
 .middle-section h2 {
@@ -69,6 +72,7 @@
 .right-section {
   width: 60%;
   margin: 0 40px;
+  animation: fade-in 4s ease-in;
 }
 
 .right-section h3 {
@@ -133,14 +137,14 @@
 
 /* Expand Images */
 /* Modals */
-.show-modal {
+/* .show-modal {
   border: none;
   cursor: pointer;
   background-color: var(--dark-color);
 }
 
 /* CLASSES TO MAKE MODAL WORK */
-.modal {
+/* .modal {
   position: fixed;
   left: -50%;
   top: -50%;
@@ -176,4 +180,17 @@
   visibility: visible;
   transform: scale(1);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+} */
+
+/* Animation */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -62,11 +62,13 @@
   color: var(--dark-color);
   text-shadow: -1px 0 var(--grey-color), 0 1px var(--grey-color),
     1px 0 var(--grey-color), 0 -1px var(--grey-color);
+  animation: fade-in 0.5s ease-in;
 }
 
 .about p {
   width: 50%;
   line-height: 1.2;
+  animation: fade-in 2.5s ease-in;
 }
 
 .about a {
@@ -123,6 +125,7 @@
   animation: slide-in 2.8s ease-in-out infinite;
 }
 
+/* Animations */
 @keyframes slide-in {
   0% {
     opacity: 0;
@@ -136,17 +139,12 @@
     /* transform: translateX(20px); */
   }
 }
-/* Hover links to buttons 
-Needs to be done in Javascript??*/
-/* .project-hover:hover.projects-link-btn {
-  animation: pulse 1s infinite ease-in-out;
-}
 
-@keyframes pulse {
+@keyframes fade-in {
   from {
-    transform: scale(0.8);
+    opacity: 0;
   }
   to {
-    transform: scale(1.2);
+    opacity: 1;
   }
-} */
+}
