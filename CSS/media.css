@@ -121,9 +121,7 @@
 
   /* Contact */
   .contact {
-    flex-direction: column;
-    height: 100vh;
-    width: fit-content;
+    margin: 20px;
     animation: fade-in 1.5s ease-in;
   }
 
