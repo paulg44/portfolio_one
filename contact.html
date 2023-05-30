@@ -37,34 +37,38 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
       <!-- Contact-Info -->
-      <div class="contact-info">
+      <!-- <div class="contact-info">
         <div class="contact-container">
           <i class="fa-regular fa-envelope fa-4x"></i>
           <div class="inner-container">
             <h3>Email</h3>
-            <!-- <a href="mailto:paulgarton1984@hotmail.com" target="_blank"
-              >paulgarton1984@hotmail.com</a> -->
+            <a href="mailto:paulgarton1984@hotmail.com" target="_blank"
+              >paulgarton1984@hotmail.com</a>
           </div>
         </div>
         <div class="contact-container">
           <i class="fa-solid fa-phone fa-4x"></i>
           <div class="inner-container">
             <h3>Phone</h3>
-            <!-- <a href="tel:07806691039" target="_blank">07806691039</a> -->
+            <a href="tel:07806691039" target="_blank">07806691039</a>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- Contact Form -->
       <div class="contact-form">
         <form name="contact" class="form" netlify>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" />
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" />
-          <label for="phone">Phone No</label>
-          <input type="number" id="phone" name="phone" />
-          <textarea name="text" placeholder="Anything to add..."></textarea>
-          <button type="submit">Submit</button>
+          <div class="left-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required />
+            <label for="phone">Phone No</label>
+            <input type="number" id="phone" name="phone" />
+          </div>
+          <div class="right-form">
+            <textarea name="text" placeholder="Anything to add..."></textarea>
+            <button type="submit">Submit</button>
+          </div>
         </form>
       </div>
     </section>

@@ -2,14 +2,12 @@
 
 /* Contact Body */
 .contact {
-  height: 70vh;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 /* Conatct Details */
-.contact-info {
+/* .contact-info {
   display: flex;
   flex-direction: column;
 }
@@ -41,12 +39,28 @@
   bottom: 10%;
   font-weight: bolder;
   color: var(--bright-color);
-}
+} */
 
 /* Form */
 .form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form .left-form,
+.form .right-form {
   display: flex;
   flex-direction: column;
+  margin: 20px;
+}
+
+.form label {
+  font-size: 60px;
+  text-transform: uppercase;
+  color: var(--dark-color);
+  text-shadow: -1px 0 var(--grey-color), 0 1px var(--grey-color),
+    1px 0 var(--grey-color), 0 -1px var(--grey-color);
 }
 
 .form input {
@@ -58,13 +72,15 @@
 
 .form textarea {
   border-radius: 10px;
-  height: 100px;
+  height: 150px;
+  width: 300px;
   padding: 5px;
-  margin: 10px 0;
+  margin-bottom: 30px;
 }
 
 .form button {
-  margin-top: 10px;
+  position: absolute;
+  bottom: 30px;
   align-self: center;
 }
 

@@ -127,10 +127,14 @@
     animation: fade-in 1.5s ease-in;
   }
 
-  .inner-container {
-    margin: 0;
-    width: fit-content;
+  .form {
+    flex-direction: column;
   }
+
+  /* .form .left-form,
+  .form .right-form {
+
+  } */
 
   /* Animations */
   @keyframes fade-in {
