@@ -35,7 +35,7 @@
 
   .text-scroll {
     position: relative;
-    animation-delay: 1s;
+    /* animation-delay: 1s; */
   }
 
   .about {
