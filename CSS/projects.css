@@ -88,6 +88,10 @@
   position: relative;
 }
 
+.inner-project-container {
+  display: flex;
+}
+
 .individual-project {
   text-align: center;
 }
