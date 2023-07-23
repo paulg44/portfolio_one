@@ -76,7 +76,7 @@ img {
 
 /* Contact Hover */
 .nav-links .contact-button:hover {
-  border-bottom: 2px solid var(--bright-color);
+  color: var(--bright-color);
 }
 
 /* Footer */

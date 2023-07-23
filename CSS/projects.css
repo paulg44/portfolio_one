@@ -184,7 +184,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity .4s ease-in-out;
 }
 
 .project.active {
@@ -213,4 +213,33 @@
 .carousel-prev:hover,
 .carousel-next:hover {
   color: var(--bright-color);
+}
+
+.carousel-next:active, .carousel-prev:active {
+  animation: bounce .5s ease-in-out;
+}
+
+@keyframes bounce {
+  
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  95% {
+    transform: translateY(-7%);
+  }
+  97% {
+    transform: translateY(0%);
+  }
+  99% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
