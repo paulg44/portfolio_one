@@ -9,7 +9,7 @@
 
 // Variables
 const scrollText = document.querySelector('.text-scroll');
-const textArray = ['Software Developer', 'Web Developer', 'Web Designer'];
+const textArray = ['Software Developer', 'Web Developer', 'Web Designer', "UI/UX Designer"];
 
 // Function
 function scrollTextFunction() {
