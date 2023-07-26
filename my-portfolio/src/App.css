@@ -1,0 +1,56 @@
+/* Utilities CSS for whole site */
+
+/* Root CSS Variables */
+:root {
+  --bright-color: #f4aae0;
+  --dark-color: #010101;
+  --light-color: #f4f4f4;
+  --grey-color: #777877;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body CSS */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  height: 100vh;
+}
+
+/* Utilities */
+a {
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--bright-color);
+  color: var(--dark-color);
+  padding: 10px;
+  width: 150px;
+  border: none;
+  border-radius: 20px;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+button:active {
+  transform: scale 0.97;
+}
+
+img {
+  width: 24%;
+}
+
