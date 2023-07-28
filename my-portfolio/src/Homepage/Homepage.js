@@ -26,7 +26,7 @@ function Homepage() {
             developer, looking to make a change in my life and others. I am a
             recent graduate of the
             <code
-              ><a href="https://www.schoolofcode.co.uk/" target="_blank"
+              ><a href="https://www.schoolofcode.co.uk/" target="_blank" rel="noreferrer"
                 >School of Code</a></code>
             bootcamp and I enjoyed every challenging minute.
             <br />
