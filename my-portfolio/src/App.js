@@ -1,0 +1,16 @@
+// Imports 
+import {React} from "react"
+import './App.css';
+
+// Component Imports
+import Navbar from "./Navbar/Navbar";
+
+function App() {
+  return (
+   <div>
+    <Navbar/>
+   </div>
+  );
+}
+
+export default App;

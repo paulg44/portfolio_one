@@ -1,0 +1,25 @@
+/* Navbar CSS */
+
+.navbar {
+    /* For some reason without the border top I get a grey thick line above the navbar??? */
+    border-top: 1px solid #010101;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+  }
+  
+  .nav-links span {
+    color: var(--bright-color);
+  }
+  
+  .nav-links .logo {
+    transform: rotate(-10deg);
+  }
+  
+  /* Contact Hover */
+  .nav-links .contact-button:hover {
+    color: var(--bright-color);
+  }
