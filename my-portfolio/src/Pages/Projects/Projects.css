@@ -1,0 +1,76 @@
+/* CSS File for projects page */
+
+/* Projects Section */
+.projects {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 5%;
+    height: 70vh;
+  }
+  
+  .projects img {
+    width: 35%;
+  }
+  
+  /* Left Project */
+  .left-section {
+    width: 30%;
+    animation: fade-in 2s ease-in;
+  }
+  
+  .left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .left-container img {
+    width: 40%;
+    border-radius: 10px;
+    transition: transform ease-in-out 1.5s;
+  }
+  
+  .left-container img:hover {
+    transform: scale(1.5);
+  }
+  
+  .left-container h3 {
+    margin: 10px 0;
+    border-bottom: 2px solid var(--bright-color);
+  }
+  
+  .left-container span {
+    color: var(--bright-color);
+  }
+  
+  .left-container p {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .left-container i {
+    font-size: 12px;
+    margin: 0 3px;
+    color: var(--grey-color);
+  }
+  
+  .left-container i:hover {
+    color: var(--bright-color);
+  }
+  
+  /* Middle Header */
+  .middle-section {
+    width: 20%;
+    height: 100vh;
+    animation: fade-in 3s ease-in;
+  }
+  
+  .middle-section h2 {
+    margin-top: 100%;
+    transform: rotate(270deg);
+    font-size: 80px;
+    color: var(--dark-color);
+    text-shadow: -1px 0 var(--bright-color), 0 1px var(--bright-color),
+      1px 0 var(--bright-color), 0 -1px var(--bright-color);
+  }

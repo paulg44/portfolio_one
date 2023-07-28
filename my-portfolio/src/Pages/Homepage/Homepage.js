@@ -1,7 +1,8 @@
 // Component for Homepage
 import {useState, useEffect} from "react"
+import { Link } from "react-router-dom";
 import "./Homepage.css"
-import profileImg from "../IMG/profile_test_2-PhotoRoom.png-PhotoRoom.png"
+import profileImg from "../../IMG/profile_test_2-PhotoRoom.png-PhotoRoom.png"
 
 
 function Homepage() {
@@ -52,7 +53,7 @@ function Homepage() {
             If you would like to get in touch, please contact me
             <code><a href="contact.html">here </a></code>. Alternatively click
             <code
-              ><a href="projects.html" className="bounce-text">&nbsp;projects&nbsp;</a></code>
+              ><Link to={"/projects"} className="bounce-text">&nbsp;projects&nbsp;</Link></code>
             to view some of my work. Thanks for your time, Paul.
           </p>
         </div>
