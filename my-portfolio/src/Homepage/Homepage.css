@@ -42,7 +42,7 @@
   .text-scroll {
     color: var(--bright-color);
     position: fixed;
-    margin-top: 7%;
+    margin-top: 8%;
   }
   
   /* Styling for angled text */

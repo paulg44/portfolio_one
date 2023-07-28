@@ -1,0 +1,44 @@
+/* CSS for Footer */
+
+.footer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+    left: 2.5%;
+    width: 95%;
+    border-top: 2px solid var(--bright-color);
+    padding: 20px;
+  }
+  
+  .social-links .link {
+    font-size: 20px;
+    margin: 0 10px;
+    color: var(--grey-color);
+    transition: color 1s ease-in-out;
+  }
+  
+  .social-links .link:hover {
+    color: var(--bright-color);
+  }
+  
+  .tech-stacks .faReact {
+    color: #61dbfb;
+    margin: 0 5px;
+  }
+  
+  .tech-stacks .faNodeJs {
+    color: #6cc24a;
+    margin: 0 5px;
+  }
+  
+  .tech-stacks .faHtml5 {
+    color: #e34c26;
+    margin: 0 5px;
+  }
+  
+  .tech-stacks .faCss3 {
+    color: #264de4;
+    margin: 0 5px;
+  }
