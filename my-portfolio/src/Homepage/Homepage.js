@@ -1,9 +1,25 @@
 // Component for Homepage
+import {useState, useEffect} from "react"
 import "./Homepage.css"
 import profileImg from "../IMG/profile_test_2-PhotoRoom.png-PhotoRoom.png"
 
 
 function Homepage() {
+    
+        const textArray = ['Software Developer', 'Web Developer', 'Web Designer', 'UI/UX Designer'];
+        const [currentIndex, setCurrentIndex] = useState(0);
+      
+        useEffect(() => {
+          const intervalId = setInterval(() => {
+            // Update the currentIndex, wrapping back to the beginning if necessary
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % textArray.length);
+          }, 2800);
+      
+          return () => {
+            clearInterval(intervalId);
+          };
+        }, [textArray.length]);
+
     return (
     <div id="main" class="main">
       {/* <!-- Image --> */}
@@ -17,7 +33,7 @@ function Homepage() {
         <div className="main-header">
           <h1>Hey, I'm Paul</h1>
           <p>An Aspiring</p>
-          <p className="text-scroll">Software Developer</p>
+          <p className="text-scroll">{textArray[currentIndex]}</p>
         </div>
         {/* <!-- About me --> */}
         <div className="about">
