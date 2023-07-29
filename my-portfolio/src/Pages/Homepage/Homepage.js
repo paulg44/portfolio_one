@@ -1,43 +1,43 @@
 // Component for Homepage
-// import {useState, useEffect} from "react"
-// import { Link } from "react-router-dom";
+ import {useState, useEffect} from "react"
+ import { Link } from "react-router-dom";
 import "./Homepage.css"
-// import profileImg from "../../IMG/profile_test_2-PhotoRoom.png-PhotoRoom.png"
+import profileImg from "../../IMG/profile_test_2-PhotoRoom.png-PhotoRoom.png"
 
 
 function Homepage() {
     
-        // const textArray = ['Software Developer', 'Web Developer', 'Web Designer', 'UI/UX Designer'];
-        // const [currentIndex, setCurrentIndex] = useState(0);
+        const textArray = ['Software Developer', 'Web Developer', 'Web Designer', 'UI/UX Designer'];
+        const [currentIndex, setCurrentIndex] = useState(0);
       
-        // useEffect(() => {
-        //   const intervalId = setInterval(() => {
-        //     // Update the currentIndex, wrapping back to the beginning if necessary
-        //     setCurrentIndex((prevIndex) => (prevIndex + 1) % textArray.length);
-        //   }, 2800);
+        useEffect(() => {
+          const intervalId = setInterval(() => {
+            // Update the currentIndex, wrapping back to the beginning if necessary
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % textArray.length);
+          }, 2800);
       
-        //   return () => {
-        //     clearInterval(intervalId);
-        //   };
-        // }, [textArray.length]);
+          return () => {
+            clearInterval(intervalId);
+          };
+        }, [textArray.length]);
 
     return (
     <div id="main" class="main">
       {/* <!-- Image --> */}
-      {/* <img
+      <img
         src={profileImg}
         alt="side profile"
         className="main-img"
-      /> */}
+      />
       {/* <!-- Main Header --> */}
-      {/* <main className="main-container">
+      <main className="main-container">
         <div className="main-header">
           <h1>Hey, I'm Paul</h1>
           <p>An Aspiring</p>
           <p className="text-scroll">{textArray[currentIndex]}</p>
-        </div> */}
+        </div>
         {/* <!-- About me --> */}
-        {/* <div className="about">
+        <div className="about">
           <h3>About</h3>
           <p>
             Hello, and welcome to my portfolio website. I am a 39 year old
@@ -51,15 +51,15 @@ function Homepage() {
             <br />
             <br />
             If you would like to get in touch, please contact me
-            <code><a href="contact.html">here </a></code>. Alternatively click
+            <code><Link to={"/contact"}>here </Link></code>. Alternatively click
             <code
               ><Link to={"/projects"} className="bounce-text">&nbsp;projects&nbsp;</Link></code>
             to view some of my work. Thanks for your time, Paul.
           </p>
         </div>
-      </main> */}
+      </main>
     
-    <h1 className="construction">CURRENTLY UNDER CONSTRUCTION  (Refactor to React) COME BACK MONDAY 31ST JULY</h1>
+    {/* <h1 className="construction">CURRENTLY UNDER CONSTRUCTION  (Refactor to React) COME BACK MONDAY 31ST JULY</h1> */}
     </div>
     )
 }

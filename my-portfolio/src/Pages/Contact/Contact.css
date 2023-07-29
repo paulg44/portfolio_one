@@ -1,0 +1,56 @@
+/* CSS for Contact Page */
+
+/* Contact Body */
+.contact {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Form */
+.form {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .form .left-form,
+  .form .right-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  
+  .form label {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    text-shadow: -1px 0 var(--grey-color), 0 1px var(--grey-color),
+      1px 0 var(--grey-color), 0 -1px var(--grey-color);
+  }
+  
+  .form input {
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding: 5px;
+    border: none;
+  }
+  
+  .form textarea {
+    border-radius: 10px;
+    height: 150px;
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 30px;
+  }
+  
+  .form button {
+    position: absolute;
+    bottom: 30px;
+    align-self: center;
+  }
+  
+  .form input:focus,
+  .form textarea:focus {
+    outline: 2px solid var(--bright-color);
+  }
+  
