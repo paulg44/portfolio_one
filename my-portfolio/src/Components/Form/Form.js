@@ -3,7 +3,7 @@ import './Form.css';
 
 function ContactForm() {
   return (
-    <form name="contact" class="form" netlify>
+    <form name="contact" class="form-name" netlify>
       <input type="hidden" name="contact" value="contact" />
       <div class="left-form">
         <label for="name">Name</label>
