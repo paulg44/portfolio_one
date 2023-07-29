@@ -53,3 +53,27 @@ button:active {
 img {
   width: 24%;
 }
+
+/* Media queries CSS file */
+@media (max-width: 1200px) {
+  /* Body */
+  body {
+    text-align: center;
+    height: fit-content;
+    /* width: fit-content; */
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  /* Animations */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

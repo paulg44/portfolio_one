@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import { FaArrowLeft } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { FaLink } from 'react-icons/fa';
 import ProjectTemplate from '../../Components/ProjectTemplate/ProjectTemplate';
 import consensusIMG from '../../IMG/home_mobile.jpg';
 import dictionaryImg from '../../IMG/dictionary_app.jpg';
@@ -44,7 +46,7 @@ function Projects() {
       websiteLink: 'https://paulg44.github.io/mobile-phone/',
       githubLink: 'https://github.com/paulg44/mobile-phone',
       imgSrc: homeMobile,
-      imgClassName: '',
+
       description:
         '      A re-creation of my own mobile phone. What started as some practice whilst working away has turned into a full project. Using mainly HTML & CSS I have re-created my own phone, also using some Javascript. This has been great for honing my CSS skills, and I will also be adding as much functionality as possible. Ongoing.....',
       className: 'mobile-project',
@@ -72,14 +74,14 @@ function Projects() {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fa-solid fa-link"></i>
+              <FaLink className="leftIcon" />
             </a>
             <a
               href="https://github.com/BC14-GPT-great-programming-team/Great-Programming-Team-Final-Project"
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fa-brands fa-github"></i>
+              <FaGithub className="leftIcon" />
             </a>
           </h3>
 
@@ -107,6 +109,10 @@ function Projects() {
                 className={`project ${
                   index === activeProjectIndex ? 'active' : ''
                 }`}
+                style={{
+                  zIndex: index === activeProjectIndex ? 1 : 0,
+                  pointerEvents: index === activeProjectIndex ? 'auto' : 'none',
+                }}
               >
                 <ProjectTemplate {...project} />
               </div>

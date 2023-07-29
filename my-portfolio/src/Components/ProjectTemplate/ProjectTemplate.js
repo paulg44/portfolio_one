@@ -18,20 +18,15 @@ function ProjectTemplate({
       <div className={className}>
         <h3>
           {title}
-          <a href={websiteLink} target="_blank" rel="noopener noreferrer">
-            <FaLink className="icons" />
+          <a href={websiteLink} target="_blank" rel="noreferrer">
+            <FaLink className="rightIcon" />
           </a>
-          <a
-            className="icons"
-            href={githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub />
+          <a href={githubLink} target="_blank" rel="noreferrer">
+            <FaGithub className="rightIcon" />
           </a>
         </h3>
 
-        <img src={imgSrc} alt={imgAlt} className={imgClassName} />
+        <img src={imgSrc} alt={imgAlt} />
         <p>{description}</p>
       </div>
     </div>

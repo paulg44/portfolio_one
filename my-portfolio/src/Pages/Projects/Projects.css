@@ -49,13 +49,13 @@
   margin-top: 5px;
 }
 
-.left-container i {
+.left-container .leftIcon {
   font-size: 12px;
-  margin: 0 3px;
+  margin-left: 10px;
   color: var(--grey-color);
 }
 
-.left-container i:hover {
+.left-container .leftIcon:hover {
   color: var(--bright-color);
 }
 
@@ -95,6 +95,7 @@
 }
 
 .individual-project h3 {
+  padding: 2px;
   width: 50%;
   border-bottom: 2px solid var(--bright-color);
 }
@@ -107,58 +108,6 @@
   margin: 20px 30px;
   width: 80%;
   border-radius: 5px;
-}
-
-.individual-project i {
-  font-size: 12px;
-  margin: 3px;
-  color: var(--grey-color);
-}
-
-.individual-project i:hover {
-  color: var(--bright-color);
-}
-
-.inner-div p {
-  margin-top: 5px;
-  margin-right: 40px;
-  font-size: 12px;
-}
-
-.inner-div img {
-  border-radius: 5px;
-  transition: transform 1.5s ease-in-out;
-}
-
-.inner-div img:hover {
-  transform: scale(2);
-}
-
-/* Mobile Projects */
-.mobile-project h3 {
-  width: 50%;
-  border-bottom: 2px solid var(--bright-color);
-}
-
-.mobile-project-inner {
-  display: flex;
-  align-items: center;
-  margin: 20px;
-}
-
-.mobile-project-inner p {
-  text-align: center;
-  padding: 0 20px;
-}
-
-.mobile-project i {
-  font-size: 12px;
-  margin: 3px;
-  color: var(--grey-color);
-}
-
-.mobile-project i:hover {
-  color: var(--bright-color);
 }
 
 /* Animation */
@@ -240,5 +189,88 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .projects {
+    display: block;
+    margin: 0;
+    height: fit-content;
+  }
+
+  .projects h3 {
+    animation: fade-in 2s ease-in;
+  }
+
+  .projects p {
+    font-size: 16px;
+    animation: fade-in 3s ease-in;
+  }
+
+  .projects img {
+    width: 50%;
+    margin: 10px 0;
+    animation: fade-in 1s ease-in;
+  }
+
+  .left-container p {
+    margin: 10px 40px;
+  }
+
+  .middle-section {
+    height: fit-content;
+  }
+
+  .middle-section h2 {
+    transform: rotate(0deg);
+    margin: 0 20px;
+    animation: fade-in 4s ease-in;
+  }
+
+  .right-section {
+    margin: 0;
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+
+  .left-section,
+  .middle-section {
+    width: fit-content;
+    margin: 30px 0;
+  }
+
+  .right-section {
+    width: 100%;
+  }
+  .right-container {
+    margin: 0 30px;
+  }
+
+  .inner-project-container {
+    flex-direction: column;
+  }
+
+  .individual-project h3 {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+
+  .project {
+    margin-bottom: 20px;
+  }
+
+  .mobile-project h3 {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .mobile-project img {
+    display: none;
+  }
+
+  .mobile-project-inner {
+    flex-direction: column;
   }
 }
