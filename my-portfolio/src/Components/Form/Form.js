@@ -1,10 +1,15 @@
 // Contact From Component
 import './Form.css';
-import { Link } from 'react-router-dom';
 
 function ContactForm() {
   return (
-    <form method="POST" name="contact" class="form" netlify>
+    <form
+      method="POST"
+      name="contact"
+      // action="../../Pages/Submission/Submission"
+      class="form"
+      netlify
+    >
       <input type="hidden" name="form-name" value="contact" />
       <div class="left-form">
         <label htmlFor="name">Name</label>
@@ -16,9 +21,7 @@ function ContactForm() {
       </div>
       <div class="right-form">
         <textarea name="text" placeholder="Anything to add..."></textarea>
-        <Link to="/submission">
-          <button type="submit">Submit</button>
-        </Link>
+        <button type="submit">Submit</button>
       </div>
     </form>
   );
