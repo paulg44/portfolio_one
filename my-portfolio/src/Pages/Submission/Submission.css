@@ -1,0 +1,33 @@
+/* CSS for submission page */
+
+.submission {
+  text-align: center;
+  animation: fade-in 2s ease-in;
+}
+
+.submission h2 {
+  font-size: 56px;
+  font-weight: 900;
+  color: var(--dark-color);
+  text-shadow: -1px 0 #fc95e1, 0 1px #fc95e1, 1px 0 #fc95e1, 0 -1px #fc95e1;
+}
+
+.submission p {
+  margin: 30px 0;
+}
+
+@media (max-width: 1220px) {
+  .submission h2 {
+    font-size: 40px;
+    margin: 0 30px;
+  }
+
+  .submission p {
+    margin: 30px 20px;
+  }
+
+  .submission img {
+    width: 80%;
+    margin-bottom: 100px;
+  }
+}
