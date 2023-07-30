@@ -1,5 +1,6 @@
 // Contact From Component
 import './Form.css';
+import { Link } from 'react-router-dom';
 
 function ContactForm() {
   return (
@@ -15,7 +16,9 @@ function ContactForm() {
       </div>
       <div class="right-form">
         <textarea name="text" placeholder="Anything to add..."></textarea>
-        <button type="submit">Submit</button>
+        <Link to="/submission">
+          <button type="submit">Submit</button>
+        </Link>
       </div>
     </form>
   );
