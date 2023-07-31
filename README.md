@@ -1,4 +1,6 @@
-Welcome to my portfolio readMe. 
+Welcome to my portfolio readMe.
+
+I have now updated this portfolio into a React App!
 
 This portfolio is currently made using vanilla HTML, CSS & Javascript. It was started when on the School of Code bootcamp and we had not yet used React.
 

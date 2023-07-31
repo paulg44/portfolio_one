@@ -1,7 +1,0 @@
-/* Media queries just for footer on projects page */
-@media (max-width: 1200px) {
-  /* Footer */
-  .footer {
-    position: relative;
-  }
-}
