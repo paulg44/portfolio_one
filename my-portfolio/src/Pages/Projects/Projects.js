@@ -16,7 +16,7 @@ function Projects() {
   const projectsData = [
     {
       title: 'LG Guitars',
-      websiteLink: 'https://lgguitars.xyz/',
+      websiteLink: 'https://bespoke-centaur-2bc4f2.netlify.app/',
       githubLink: 'https://github.com/paulg44/LGGuitars',
       imgSrc: lgGuitarsImg,
       description:
