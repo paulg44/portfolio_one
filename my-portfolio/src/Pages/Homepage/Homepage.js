@@ -39,10 +39,9 @@ function Homepage() {
         <div className="about">
           <h3>About</h3>
           <p>
-            Hello, and welcome to my portfolio website. I am a 39 year old
-            former painter and decorator on course to become a fullstack web
-            developer, looking to make a change in my life and others. I am a
-            recent graduate of the
+            Hello, and welcome to my portfolio website. I'm a former painter and
+            decorator turned fullstack web developer, looking to make a change
+            in my life and others. I am a recent graduate of the
             <code>
               <a
                 href="https://www.schoolofcode.co.uk/"
