@@ -25,7 +25,7 @@ function Projects() {
     },
     {
       title: 'SoC Front End Project',
-      websiteLink: '',
+      websiteLink: 'https://github.com/paulg44/frontend_project_week_SoC',
       githubLink: 'https://github.com/paulg44/frontend_project_week_SoC',
       imgSrc: socFrontend,
       description:
