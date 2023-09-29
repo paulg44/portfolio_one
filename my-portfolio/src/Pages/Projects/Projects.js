@@ -10,6 +10,8 @@ import dictionaryImg from '../../IMG/dictionary_app.jpg';
 import homeMobile from '../../IMG/Screenshot (11)-PhotoRoom.png-PhotoRoom.png';
 import socFrontend from '../../IMG/soc_frontend.jpg';
 import lgGuitarsImg from '../../IMG/lg_guitars_home.jpg';
+import runningLogImg from '../../IMG/running_log_table.jpg';
+
 import './Projects.css';
 
 function Projects() {
@@ -29,9 +31,18 @@ function Projects() {
       githubLink: 'https://github.com/paulg44/frontend_project_week_SoC',
       imgSrc: socFrontend,
       description:
-        'This project comprised of teamwork and collaboration. As a team of 4 we were given a brief to design and build a front end project. In this process we learnt about the AGILE process, scrum and generally working as a team, using branches in git, merging and resolving any insuing conflicts.',
+        'This project comprised of teamwork and collaboration. As a team of 4 we were given a brief to design and build a front end project. In this process we learnt about the AGILE process, scrum and generally working as a team, using branches in git, merging and resolving any resulting conflicts.',
       className: 'individual-project',
     },
+    {
+      title: 'Run Tracker',
+      githubLink: 'https://github.com/paulg44/running_log',
+      imgSrc: runningLogImg,
+      description:
+        'This is a project built using Ruby on Rails. I used to track my runs through an excel spreadsheet and I had the thought that an application to do this would be a good idea. Utilising the MVC in Rails I have built a full CRUD application with authenticated sign up and search functions, using the devise and ransack gems respectively.',
+      className: 'individual-project',
+    },
+
     {
       title: 'Online Dictionary',
       websiteLink: 'https://paulg44.github.io/dictionary_app/',
