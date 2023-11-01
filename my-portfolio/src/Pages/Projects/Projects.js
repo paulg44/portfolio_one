@@ -11,6 +11,7 @@ import homeMobile from '../../IMG/Screenshot (11)-PhotoRoom.png-PhotoRoom.png';
 import socFrontend from '../../IMG/soc_frontend.jpg';
 import lgGuitarsImg from '../../IMG/lg_guitars_home.jpg';
 import runningLogImg from '../../IMG/running_log_table.jpg';
+import javascriptSawImg from '../../IMG/saw-img.jpg';
 
 import './Projects.css';
 
@@ -40,6 +41,15 @@ function Projects() {
       imgSrc: runningLogImg,
       description:
         'This is a project built using Ruby on Rails. I used to track my runs through an excel spreadsheet and I had the thought that an application to do this would be a good idea. Utilising the MVC in Rails I have built a full CRUD application with authenticated sign up and search functions, using the devise and ransack gems respectively.',
+      className: 'individual-project',
+    },
+    {
+      title: 'JavScript Project Bundle',
+      githubLink: 'https://github.com/paulg44/javascript-project-bundle',
+      websiteLink: 'https://paulg44.github.io/javascript-project-bundle/',
+      imgSrc: javascriptSawImg,
+      description:
+        'A bundle of JavaScript projects, all your classic favourites like a calculator, quiz and a horror style rock, paper, scissors game. Some with a unique twist and interactive CSS.',
       className: 'individual-project',
     },
 
