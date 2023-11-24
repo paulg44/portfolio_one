@@ -39,9 +39,9 @@ function Homepage() {
         <div className="about">
           <h3>About</h3>
           <p>
-            Hello, and welcome to my portfolio website. I'm a former painter and
-            decorator turned fullstack web developer, looking to make a change
-            in my life and others. I am a recent graduate of the
+            Hello, and welcome to my portfolio. I'm a former painter and
+            decorator turned junior developer, looking to make a change in my
+            life and in others. I am a graduate of the
             <code>
               <a
                 href="https://www.schoolofcode.co.uk/"
@@ -51,7 +51,8 @@ function Homepage() {
                 &nbsp;School of Code&nbsp;
               </a>
             </code>
-            bootcamp and I enjoyed every challenging minute.
+            bootcamp, and have a passion for creativity, problem solving and all
+            things tech related.
             <br />
             <br />
             If you would like to get in touch, please contact me
