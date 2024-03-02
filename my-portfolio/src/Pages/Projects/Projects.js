@@ -42,7 +42,7 @@ function Projects() {
       githubLink: 'https://github.com/paulg44/shardlow_st_james',
       imgSrc: ssj,
       description:
-        'A project I have taken on for my local amateur football club. I have used React for the tech stack as it is scalable and the reusable components are perfect as the club has three teams. I have also integrated some real time data from the FA website and is fully tested using Cypress.This project comprised of teamwork and collaboration. As a team of 4 we were given a brief to design and build a front end project. In this process we learnt about the AGILE process, scrum and generally working as a team, using branches in git, merging and resolving any resulting conflicts.',
+        'A project I have taken on for my local amateur football club. I have used React for the tech stack as it is scalable and the reusable components are perfect as the club has three teams. I have also integrated some real time data from the FA website and is fully tested using Cypress. Currently building a back end with node, express and PostgreSQL',
       className: 'individual-project',
     },
     {
