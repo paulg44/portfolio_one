@@ -16,7 +16,7 @@
 
 /* Body CSS */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oxygen Mono', monospace;
   background-color: var(--dark-color);
   color: var(--light-color);
   height: 100vh;
