@@ -79,6 +79,7 @@
 
 .about .bounce-text {
   animation: bounce 1s infinite;
+  font-weight: bolder;
 }
 
 @keyframes bounce {

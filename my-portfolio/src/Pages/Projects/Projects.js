@@ -24,7 +24,25 @@ function Projects() {
       githubLink: 'https://github.com/paulg44/LGGuitars',
       imgSrc: lgGuitarsImg,
       description:
-        ' This is the first website I ever created and hosted myself. Using HTML, CSS & Javascript, this is a website showcasing my Dads homemade guitars. I learnt a lot of CSS through building this website and about responsive design. Since I have been at SoC I have refactored this site into a React App, and learnt a lot about props in the process.',
+        ' This is the first website I ever created and hosted myself. Using HTML, CSS & Javascript, this is a website showcasing my Dads homemade guitars. I learnt a lot of CSS through building this website and about responsive design. I have since refactored this site into a React App, fully tested using REact Testing Library and Cypress for E2E.',
+      className: 'individual-project',
+    },
+    {
+      title: 'Shardlow St James',
+      websiteLink: 'https://statuesque-basbousa-0726c3.netlify.app/',
+      githubLink: 'https://github.com/paulg44/shardlow_st_james',
+      imgSrc: ssj,
+      description:
+        'A project I have taken on for my local amateur football club. I have used React for the tech stack as it is scalable and the reusable components are perfect as the club has three teams. I have also integrated some real time data from the FA website and is fully tested using Cypress and React Testing Library, including mocks for the API. Currently building a back end with node, express and PostgreSQL so that an admin can have more control over the data.',
+      className: 'individual-project',
+    },
+    {
+      title: 'JavScript Project Bundle',
+      githubLink: 'https://github.com/paulg44/javascript-project-bundle',
+      websiteLink: 'https://paulg44.github.io/javascript-project-bundle/',
+      imgSrc: javascriptSawImg,
+      description:
+        'A bundle of JavaScript projects, all your classic favourites like a calculator, quiz and a horror style rock, paper, scissors game. Some with a unique twist and interactive CSS. Full test suite this time courtesy of Jest & Playwright.',
       className: 'individual-project',
     },
     {
@@ -37,29 +55,11 @@ function Projects() {
       className: 'individual-project',
     },
     {
-      title: 'Shardlow St James',
-      websiteLink: 'https://statuesque-basbousa-0726c3.netlify.app/',
-      githubLink: 'https://github.com/paulg44/shardlow_st_james',
-      imgSrc: ssj,
-      description:
-        'A project I have taken on for my local amateur football club. I have used React for the tech stack as it is scalable and the reusable components are perfect as the club has three teams. I have also integrated some real time data from the FA website and is fully tested using Cypress. Currently building a back end with node, express and PostgreSQL',
-      className: 'individual-project',
-    },
-    {
       title: 'Run Tracker',
       githubLink: 'https://github.com/paulg44/running_log',
       imgSrc: runningLogImg,
       description:
         'This is a project built using Ruby on Rails. I used to track my runs through an excel spreadsheet and I had the thought that an application to do this would be a good idea. Utilising the MVC in Rails I have built a full CRUD application with authenticated sign up and search functions, using the devise and ransack gems respectively.',
-      className: 'individual-project',
-    },
-    {
-      title: 'JavScript Project Bundle',
-      githubLink: 'https://github.com/paulg44/javascript-project-bundle',
-      websiteLink: 'https://paulg44.github.io/javascript-project-bundle/',
-      imgSrc: javascriptSawImg,
-      description:
-        'A bundle of JavaScript projects, all your classic favourites like a calculator, quiz and a horror style rock, paper, scissors game. Some with a unique twist and interactive CSS.',
       className: 'individual-project',
     },
 

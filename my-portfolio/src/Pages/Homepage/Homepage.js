@@ -50,12 +50,12 @@ function Homepage() {
             <br />
             If you would like to get in touch, please contact me
             <code>
-              &nbsp;<Link to={'/contact'}>here </Link>
+              &nbsp;<Link to={'/contact'}>HERE </Link>
             </code>
             . Alternatively click
             <code>
               <Link to={'/projects'} className="bounce-text">
-                &nbsp;projects&nbsp;
+                PROJECTS&nbsp;
               </Link>
             </code>
             to view some of my work. Thanks for your time, Paul.
