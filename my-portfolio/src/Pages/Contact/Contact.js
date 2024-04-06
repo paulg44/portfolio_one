@@ -10,6 +10,9 @@ function Contact() {
       <div class="contact-form">
         <ContactForm />
       </div>
+      <a href="mailto: paulgarton1984@hotmail.com" className="email">
+        paulgarton1984@hotmail.com
+      </a>
     </section>
   );
 }

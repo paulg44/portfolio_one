@@ -3,6 +3,8 @@
 /* Contact Body */
 .contact {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -67,6 +69,23 @@
 .form input:focus,
 .form textarea:focus {
   outline: 2px solid var(--bright-color);
+}
+
+/* Email Address */
+.email {
+  font-size: 60px;
+  color: var(--dark-color);
+  text-shadow: -1px 0 var(--grey-color), 0 1px var(--grey-color),
+    1px 0 var(--grey-color), 0 -1px var(--grey-color);
+  transition: all 1s ease-in-out;
+}
+
+.email:hover {
+  font-size: 60px;
+  text-transform: uppercase;
+  color: var(--dark-color);
+  text-shadow: -1px 0 var(--bright-color), 0 1px var(--bright-color),
+    1px 0 var(--bright-color), 0 -1px var(--bright-color);
 }
 
 @media (max-width: 1200px) {
