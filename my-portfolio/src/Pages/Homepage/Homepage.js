@@ -55,7 +55,7 @@ function Homepage() {
             . Alternatively click
             <code>
               <Link to={'/projects'} className="bounce-text">
-                PROJECTS&nbsp;
+                &nbsp;PROJECTS&nbsp;
               </Link>
             </code>
             to view some of my work. Thanks for your time, Paul.
