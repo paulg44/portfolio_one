@@ -1,5 +1,5 @@
 // Contact From Component
-import './Form.css';
+import "./Form.css";
 
 function ContactForm() {
   return (
@@ -21,7 +21,9 @@ function ContactForm() {
       </div>
       <div class="right-form">
         <textarea name="text" placeholder="Anything to add..."></textarea>
-        <button type="submit">Submit</button>
+        <button type="submit" data-testid="submitBtn">
+          Submit
+        </button>
       </div>
     </form>
   );
