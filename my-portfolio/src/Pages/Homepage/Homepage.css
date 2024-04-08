@@ -66,7 +66,8 @@
 }
 
 .about p {
-  width: 50%;
+  width: 60%;
+  margin-left: 10px;
   line-height: 1.2;
   animation: fade-in 2.5s ease-in;
 }
