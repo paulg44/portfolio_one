@@ -1,22 +1,22 @@
 // Component for Homepage
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import './Homepage.css';
-import profileImg from '../../IMG/profile_test_2-PhotoRoom.png-PhotoRoom.png';
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./Homepage.css";
+import profileImg from "../../IMG/profile_test_2-PhotoRoom.png-PhotoRoom.png";
 
 function Homepage() {
   const textArray = [
-    'Software Developer',
-    'Web Developer',
-    'Web Designer',
-    'UI/UX Designer',
+    "Software Developer",
+    "Web Developer",
+    "Web Designer",
+    "UI/UX Designer",
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       // Update the currentIndex, wrapping back to the beginning if necessary
-      setCurrentIndex(prevIndex => (prevIndex + 1) % textArray.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % textArray.length);
     }, 2800);
 
     return () => {
@@ -25,7 +25,7 @@ function Homepage() {
   }, [textArray.length]);
 
   return (
-    <div id="main" class="main">
+    <div id="main" className="main">
       {/* <!-- Image --> */}
       <img src={profileImg} alt="side profile" className="main-img" />
       {/* <!-- Main Header --> */}
@@ -50,11 +50,11 @@ function Homepage() {
             <br />
             If you would like to get in touch, please contact me
             <code>
-              &nbsp;<Link to={'/contact'}>HERE </Link>
+              &nbsp;<Link to={"/contact"}>HERE </Link>
             </code>
             . Alternatively click
             <code>
-              <Link to={'/projects'} className="bounce-text">
+              <Link to={"/projects"} className="bounce-text">
                 &nbsp;PROJECTS&nbsp;
               </Link>
             </code>
