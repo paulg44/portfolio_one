@@ -5,7 +5,7 @@ import * as blogsModel from "./model.js";
 export async function getBlogsController(req, res) {
   try {
     const blogs = await blogsModel.getBlogs();
-    res.json().status(200);
+    res.json(blogs).status(200);
     console.log(`Success payload: ${blogs}`);
   } catch (error) {
     console.error("Error executing query");

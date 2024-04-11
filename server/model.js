@@ -5,7 +5,7 @@ import { pool } from "./server.js";
 export async function getBlogs() {
   try {
     const client = await pool.connect();
-    const blogQuery = await client.query("SELECT * FROM blogs");
+    const blogQuery = await client.query("SELECT * FROM blog");
     client.release();
     return blogQuery.rows;
   } catch (error) {
