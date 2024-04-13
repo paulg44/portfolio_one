@@ -8,7 +8,7 @@ function ContactForm() {
       name="contact"
       // action="../../Pages/Submission/Submission"
       className="form"
-      netlify
+      netlify="true"
     >
       <input type="hidden" name="form-name" value="contact" />
       <div className="left-form">
