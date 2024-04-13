@@ -38,22 +38,27 @@ function Blogs() {
 
   return (
     <div className="blogs">
-      <h2>Welcome to my Blog</h2>
+      <div className="blogHeader">
+        <h2>Welcome to my Blog</h2>
+        <p>A sporadic and rambling stream of conscious!</p>
+      </div>
       <div className="blogContainer">
-        {Array.isArray(displayBlog) &&
-          displayBlog.map((blog, index) => (
-            <div key={index} className="blogItem">
-              <h3>{blog.headline}</h3>
-              <div className="blogDetails">
-                <h6>{blog.author}</h6>
-                <p>{blog.englishDateStyle}</p>
+        <div className="blogCard">
+          {Array.isArray(displayBlog) &&
+            displayBlog.map((blog, index) => (
+              <div key={index} className="blogItem">
+                <h3>{blog.headline}</h3>
+                <div className="blogDetails">
+                  <h5>{blog.author}</h5>
+                  <h6>{blog.englishDateStyle}</h6>
+                </div>
+                <p>{blog.body}</p>
+                <a href={blog.blogLink} target="_blank" rel="noreferrer">
+                  {blog.blogLink}
+                </a>
               </div>
-              <p>{blog.body}</p>
-              <a href={blog.blogLink} target="_blank" rel="noreferrer">
-                {blog.blogLink}
-              </a>
-            </div>
-          ))}
+            ))}
+        </div>
       </div>
     </div>
   );
