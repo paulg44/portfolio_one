@@ -12,6 +12,9 @@ function Navbar() {
         </Link>
         {/* <a href="blogpost.html" className="contact-button">Blogpost</a> */}
         <div className="navbarLeftLinks">
+          <Link to={"/blogs"} className="contact-button blogBtn">
+            Blog
+          </Link>
           <Link to={"/projects"} className="contact-button">
             Projects
           </Link>

@@ -4,6 +4,7 @@ import express from "express";
 import pkg from "pg";
 import cors from "cors";
 import dotenv from "dotenv";
+import { blogRoutes } from "./routes.js";
 
 dotenv.config();
 
@@ -22,6 +23,7 @@ export const pool = new Pool({
 
 app.use(express.json());
 app.use(cors());
+app.use("/api/blogs", blogRoutes);
 
 app.listen(port, () => {
   console.log(`Server running on ${port}`);

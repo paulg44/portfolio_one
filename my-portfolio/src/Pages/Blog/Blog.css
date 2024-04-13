@@ -1,0 +1,44 @@
+/* CSS file for Blogs */
+
+.blogs {
+  position: relative;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.blogHeader {
+  margin: 10px;
+}
+
+.blogHeader h2 {
+  font-size: 40px;
+  width: 110%;
+  color: var(--dark-color);
+  text-shadow: -1px 0 var(--bright-color), 0 1px var(--bright-color),
+    1px 0 var(--bright-color), 0 -1px var(--bright-color);
+  border-bottom: 2px solid var(--grey-color);
+}
+
+.blogContainer {
+  height: 70vh;
+  overflow-y: scroll;
+  width: 50%;
+}
+
+.blogItem {
+  margin: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--bright-color);
+}
+
+.blogItem h3 {
+  color: var(--dark-color);
+  text-shadow: -1px 0 var(--grey-color), 0 1px var(--grey-color),
+    1px 0 var(--grey-color), 0 -1px var(--grey-color);
+}
+
+.blogDetails {
+  margin: 5px 0;
+}
