@@ -53,9 +53,6 @@ function Blogs() {
                   <h6>{blog.englishDateStyle}</h6>
                 </div>
                 <p>{blog.body}</p>
-                <a href={blog.blogLink} target="_blank" rel="noreferrer">
-                  {blog.blogLink}
-                </a>
               </div>
             ))}
         </div>
