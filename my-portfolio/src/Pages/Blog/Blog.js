@@ -10,9 +10,11 @@ function Blogs() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const blogResponse = await fetch("/api/blogs").then((blogResponse) => {
-          return blogResponse.json();
-        });
+        const blogResponse = await fetch("https://paulgarton.com/blogs").then(
+          (blogResponse) => {
+            return blogResponse.json();
+          }
+        );
         console.log(blogResponse);
 
         // Format the date for each blog item
