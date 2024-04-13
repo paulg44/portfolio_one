@@ -23,7 +23,8 @@ export const pool = new Pool({
 
 app.use(express.json());
 app.use(cors());
-app.use("https://paulgarton.com/blogs", blogRoutes);
+// app.use("https://paulgarton.com/blogs", blogRoutes);
+app.use("/api/blogs", blogRoutes);
 
 app.listen(port, () => {
   console.log(`Server running on ${port}`);
