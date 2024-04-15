@@ -10,7 +10,7 @@ function Blogs() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const blogResponse = await fetch("/api/blogs").then(
+        const blogResponse = await fetch("api.blogs").then(
           (blogResponse) => {
             return blogResponse.json();
           }
