@@ -8,7 +8,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Homepage from "./Pages/Homepage/Homepage";
 import Projects from "./Pages/Projects/Projects";
 import Contact from "./Pages/Contact/Contact";
-// import Blogs from "./Pages/Blog/Blog";
+import Blogs from "./Pages/Blog/Blog";
 import Submission from "./Pages/Submission/Submission";
 import Footer from "./Components/Footer/Footer";
 
@@ -18,7 +18,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        {/* <Route path="/blogs" element={<Blogs />} /> */}
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/submission" element={<Submission />} />

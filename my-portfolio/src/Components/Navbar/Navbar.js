@@ -10,11 +10,11 @@ function Navbar() {
         <Link to={"/"} id="logo" className="logo">
           <span>&lt;</span>Home<span>/&gt;</span>
         </Link>
-        {/* <a href="blogpost.html" className="contact-button">Blogpost</a> */}
+       
         <div className="navbarLeftLinks">
-          {/* <Link to={"/blogs"} className="contact-button blogBtn">
+          <Link to={"/blogs"} className="contact-button blogBtn">
             Blog
-          </Link> */}
+          </Link>
           <Link to={"/projects"} className="contact-button">
             Projects
           </Link>
