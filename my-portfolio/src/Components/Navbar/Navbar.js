@@ -12,9 +12,9 @@ function Navbar() {
         </Link>
        
         <div className="navbarLeftLinks">
-          {/* <Link to={"/blogs"} className="contact-button blogBtn">
+          <Link to={"/blogs"} className="contact-button blogBtn">
             Blog
-          </Link> */}
+          </Link>
           <Link to={"/projects"} className="contact-button">
             Projects
           </Link>
