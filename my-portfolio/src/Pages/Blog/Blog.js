@@ -6,11 +6,13 @@ import { useEffect, useState } from "react";
 function Blogs() {
   const [displayBlog, setDisplayBlog] = useState([]);
 
+  const backendURL = process.env.REACT_APP_BACKEND_URL
+
   //   Function to fetch blogs from database
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const blogResponse = await fetch("api/blogs").then(
+        const blogResponse = await fetch(`${backendURL}/api/blogs`).then(
           (blogResponse) => {
             return blogResponse.json();
           }
