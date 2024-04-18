@@ -38,7 +38,7 @@ function Blogs() {
       }
     };
     fetchBlogs();
-  }, []);
+  }, [backendURL]);
 
   return (
     <div className="blogs">
