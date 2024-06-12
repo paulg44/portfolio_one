@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 function Blogs() {
   const [displayBlog, setDisplayBlog] = useState([]);
 
+  // Backend url for server deployment on render
   const backendURL = process.env.REACT_APP_BACKEND_URL
 
   //   Function to fetch blogs from database

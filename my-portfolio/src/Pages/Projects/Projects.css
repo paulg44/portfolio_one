@@ -200,7 +200,7 @@
   .projects {
     display: block;
     margin: 0;
-    height: fit-content;
+    height: auto;
   }
 
   .projects h3 {

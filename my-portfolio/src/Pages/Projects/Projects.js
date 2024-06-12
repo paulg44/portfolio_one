@@ -13,6 +13,7 @@ import lgGuitarsImg from "../../IMG/lg_guitars_home.jpg";
 import runningLogImg from "../../IMG/running_log_table.jpg";
 import javascriptSawImg from "../../IMG/saw-img.jpg";
 import ssj from "../../IMG/ssj_homepage.jpg";
+import techTracker from "../../IMG/trackerHomescreen.png";
 
 import "./Projects.css";
 
@@ -20,7 +21,7 @@ function Projects() {
   const projectsData = [
     {
       title: "LG Guitars",
-      websiteLink: "https://bespoke-centaur-2bc4f2.netlify.app/",
+      websiteLink: "https://lgguitars.netlify.app",
       githubLink: "https://github.com/paulg44/LGGuitars",
       imgSrc: lgGuitarsImg,
       description:
@@ -43,6 +44,15 @@ function Projects() {
       imgSrc: javascriptSawImg,
       description:
         "A bundle of JavaScript projects, all your classic favourites like a calculator, quiz and a horror style rock, paper, scissors game. Some with a unique twist and interactive CSS. Full test suite this time courtesy of Jest & Playwright.",
+      className: "individual-project",
+    },
+    {
+      title: "Local Tech Tracker",
+      githubLink: "https://github.com/paulg44/applications",
+      // websiteLink: "https://paulg44.github.io/javascript-project-bundle/",
+      imgSrc: techTracker,
+      description:
+        "A small application to keep track of local companies that have junior roles available and their tech stack. This is a good way of being able to see if I need to learn something new. For example after my small research I am going to start digging into C#.",
       className: "individual-project",
     },
     {

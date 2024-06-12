@@ -40,12 +40,14 @@ function Homepage() {
         <div className="about">
           <h3>About</h3>
           <p>
-            I am enthusiastic about pursuing a career as a junior developer,
-            where I can make a real difference and impact in my work. As I grow
-            and become more experienced, I am looking to gain a deeper knowledge
-            in software development and enhance my ability to add value within
-            the tech industry. I have a passion for creativity, problem solving
-            and all things tech related.
+            Swapping my brushstrokes for keystrokes!! After a long career
+            decorating, it's time for a change. I'm looking for an entry
+            level/junior role in the tech industry. Where I can make a real
+            difference and impact in my work. As I grow and become more
+            experienced, I am looking to gain a deeper knowledge in software
+            development and enhance my ability to add value within the tech
+            industry. I have a passion for creativity, problem solving and all
+            things tech related.
             <br />
             <br />
             If you would like to get in touch, please contact me
