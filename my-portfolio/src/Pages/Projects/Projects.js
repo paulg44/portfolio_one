@@ -20,21 +20,21 @@ import "./Projects.css";
 function Projects() {
   const projectsData = [
     {
+      title: "Shardlow St James",
+      websiteLink: "https://ssjfc.netlify.app/",
+      githubLink: "https://github.com/paulg44/shardlow_st_james",
+      imgSrc: ssj,
+      description:
+        "A project I have taken on for my local amateur football club. I have used React for the tech stack as it is scalable and the reusable components are perfect as the club has three teams. I have also integrated some real time data from the FA website and is fully tested using Cypress and React Testing Library, including mocks for the API. Currently building a back end with node, express and PostgreSQL so that an admin can have more control over the data.",
+      className: "individual-project",
+    },
+    {
       title: "LG Guitars",
       websiteLink: "https://lgguitars.netlify.app",
       githubLink: "https://github.com/paulg44/LGGuitars",
       imgSrc: lgGuitarsImg,
       description:
         " This is the first website I ever created and hosted myself. Using HTML, CSS & Javascript, this is a website showcasing my Dads homemade guitars. I learnt a lot of CSS through building this website and about responsive design. I have since refactored this site into a React App, fully tested using REact Testing Library and Cypress for E2E.",
-      className: "individual-project",
-    },
-    {
-      title: "Shardlow St James",
-      websiteLink: "https://statuesque-basbousa-0726c3.netlify.app/",
-      githubLink: "https://github.com/paulg44/shardlow_st_james",
-      imgSrc: ssj,
-      description:
-        "A project I have taken on for my local amateur football club. I have used React for the tech stack as it is scalable and the reusable components are perfect as the club has three teams. I have also integrated some real time data from the FA website and is fully tested using Cypress and React Testing Library, including mocks for the API. Currently building a back end with node, express and PostgreSQL so that an admin can have more control over the data.",
       className: "individual-project",
     },
     {
