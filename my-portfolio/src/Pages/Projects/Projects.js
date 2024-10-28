@@ -5,7 +5,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
 import ProjectTemplate from "../../Components/ProjectTemplate/ProjectTemplate";
-import consensusIMG from "../../IMG/home_mobile.jpg";
+import consensusIMG from "../../IMG/consensus.jpg";
 import dictionaryImg from "../../IMG/dictionary_app.jpg";
 import homeMobile from "../../IMG/Screenshot (11)-PhotoRoom.png-PhotoRoom.png";
 import socFrontend from "../../IMG/soc_frontend.jpg";
@@ -14,6 +14,8 @@ import runningLogImg from "../../IMG/running_log_table.jpg";
 import javascriptSawImg from "../../IMG/saw-img.jpg";
 import ssj from "../../IMG/ssj_homepage.jpg";
 import techTracker from "../../IMG/trackerHomescreen.png";
+import hannahImg from "../../IMG/hannah_mob.jpg";
+import scraper from "../../IMG/scraper.image.jpg";
 
 import "./Projects.css";
 
@@ -25,7 +27,26 @@ function Projects() {
       githubLink: "https://github.com/paulg44/shardlow_st_james",
       imgSrc: ssj,
       description:
-        "A project I have taken on for my local amateur football club. I have used React for the tech stack as it is scalable and the reusable components are perfect as the club has three teams. I have also integrated some real time data from the FA website and is fully tested using Cypress and React Testing Library, including mocks for the API. Currently building a back end with node, express and PostgreSQL so that an admin can have more control over the data.",
+        "A project I have taken on for my local amateur football club. Built using React, Bootstrap Node and Express. I have also integrated some real time data from the FA website and is fully tested using Cypress and React Testing Library, including mocks for the API. Currently building a web scraper to take a specific part of Instagram URL to update the news section automatically.",
+      className: "individual-project",
+    },
+    {
+      title: "Playwright Web Scraper",
+      // websiteLink: "https://ssjfc.netlify.app/",
+      githubLink: "https://github.com/paulg44/basic-web-scraper",
+      imgSrc: scraper,
+      description:
+        "This Playwright web scraper was built to help me gain some knowledge into web scraping and data manipulation. It currently saves an array of href's on a particular page. I have also added a cron job to the GitHub Actions that runs once a day at 9pm. This tool is currently being built into my SSJ site to show the latest news from Instagram.",
+      className: "individual-project",
+    },
+    {
+      title: "ConsensUs",
+      websiteLink: "https://consensusgpt.netlify.app/",
+      githubLink:
+        "https://github.com/BC14-GPT-great-programming-team/Great-Programming-Team-Final-Project",
+      imgSrc: consensusIMG,
+      description:
+        "Our SoC final project. An App designed for multiple users who can't decide what to do on a night out, this app saves time by coming to a decision for you, using rounds of voting. This project was all about teamwork, collaboration and honestly, fun!",
       className: "individual-project",
     },
     {
@@ -107,18 +128,18 @@ function Projects() {
       {/* <!-- Project on the left section --> */}
       <section className="left-section">
         <div className="left-container">
-          <img src={consensusIMG} alt="mobile project main" />
+          <img src={hannahImg} alt="mobile project main" />
           <h3>
-            Consens<span>U</span>s
+            Hannah <span>Jane</span> Garton
             <a
-              href="https://consensusgpt.netlify.app/"
+              href="https://hannahjanegarton.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
               <FaLink className="leftIcon" />
             </a>
             <a
-              href="https://github.com/BC14-GPT-great-programming-team/Great-Programming-Team-Final-Project"
+              href="https://github.com/paulg44/hannah-art-website"
               target="_blank"
               rel="noreferrer"
             >
@@ -127,10 +148,11 @@ function Projects() {
           </h3>
 
           <p>
-            Our SoC final project. An App designed for mutliple users who can't
-            decide what to do on a night out, this app saves time by coming to a
-            decision for you, using rounds of voting. This project was all about
-            teamwork, collaboration and honestly, fun!
+            A website portfolio/shop for my wife's art. Built using React, Node
+            & Express and Stripe for payment integration. Currently under
+            construction whilst we sort out the products to be sold. Server
+            deployed using Render so it can take a little while to load the
+            products.
           </p>
         </div>
       </section>
