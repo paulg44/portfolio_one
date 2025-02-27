@@ -1,6 +1,6 @@
 // Component for successful submission
-import './Submission.css';
-import smiley from '../../IMG/vecteezy_3d-render-emoticon-or-emoji-perfect-for-sosial-media_10196114_814-removebg-preview.jpg';
+import "./Submission.css";
+import smiley from "../../IMG/vecteezy_3d-render-emoticon-or-emoji-perfect-for-sosial-media_10196114_814-removebg-preview.jpg";
 
 function Submission() {
   return (
@@ -10,7 +10,7 @@ function Submission() {
         I will be in touch in due course. Thank you for taking the time to look
         through my portfolio, and lastly, have a nice day!
       </p>
-      <img src={smiley} alt="siley emoji faces" />
+      <img src={smiley} alt="smiley emoji faces" />
     </div>
   );
 }

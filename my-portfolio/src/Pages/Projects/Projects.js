@@ -16,6 +16,7 @@ import ssj from "../../IMG/ssj_homepage.jpg";
 import techTracker from "../../IMG/trackerHomescreen.png";
 import hannahImg from "../../IMG/hannah_mob.jpg";
 import scraper from "../../IMG/scraper.image.jpg";
+import ivyGame from "../../IMG/ivys_game_homescreen.jpg";
 
 import "./Projects.css";
 
@@ -29,6 +30,14 @@ function Projects() {
       description:
         "A project I have taken on for my local amateur football club. Built using React, Bootstrap Node and Express. I have also integrated some real time data from the FA website and is fully tested using Cypress and React Testing Library, including mocks for the API. Currently building a web scraper to take a specific part of Instagram URL to update the news section automatically.",
       className: "individual-project",
+    },
+    {
+      title: "Ivy's Drawing Game",
+      websiteLink: "https://ivysgame.netlify.app/",
+      githubLink: "https://github.com/paulg44/drawing_game",
+      imgSrc: ivyGame,
+      description:
+        "This is a personal project using an idea my daughter had for a game about copying an image on a screen. I have ran with this and I am building out an educational game where a user draws on a canvas then an AI checks the likeness of the users drawing. Learnt so much in this so far, with how to work with canvas, images and how to incorporate an AI into a project just to name a few.",
     },
     {
       title: "Playwright Web Scraper",
