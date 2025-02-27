@@ -38,6 +38,7 @@ function Projects() {
       imgSrc: ivyGame,
       description:
         "This is a personal project using an idea my daughter had for a game about copying an image on a screen. I have ran with this and I am building out an educational game where a user draws on a canvas then an AI checks the likeness of the users drawing. Learnt so much in this so far, with how to work with canvas, images and how to incorporate an AI into a project just to name a few.",
+      className: "individual-project",
     },
     {
       title: "Playwright Web Scraper",

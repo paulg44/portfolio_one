@@ -11,6 +11,7 @@ import Contact from "./Pages/Contact/Contact";
 // import Blogs from "./Pages/Blog/Blog";
 import Submission from "./Pages/Submission/Submission";
 import Footer from "./Components/Footer/Footer";
+import Chatbot from "./Components/Chatbot/Chatbot";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         {/* <Route path="/blogs" element={<Blogs />} /> */}
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/submission" element={<Submission />} />
       </Routes>
       <Footer />
