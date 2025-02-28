@@ -7,10 +7,24 @@
 - or save locally for if they come back?
 */
 
+import { useState } from "react";
 import "./chatbot.css";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 
 export default function Chatbot() {
+  const [userQuestion, setUserQuestion] = useState("");
+  const [userChat, setUserChat] = useState([]);
+  const [computerChat, setcomputerChat] = useState([]);
+
+  const handleUserQuestion = (e) => {
+    setUserQuestion(e.target.value);
+  };
+
+  const handleUserChat = async () => {
+    setUserChat([...userChat, userQuestion]);
+    console.log(userChat);
+  };
+
   return (
     <section className="chatbotContainer">
       <div className="chatContainer">
@@ -23,6 +37,7 @@ export default function Chatbot() {
       <div className="questionContainer">
         <div className="textInput">
           <textarea
+            onChange={handleUserQuestion}
             className="chatbotInput"
             id="question"
             name="question"
@@ -30,7 +45,7 @@ export default function Chatbot() {
             placeholder="Ask me anything..."
             required
           />
-          <button type="submit">
+          <button type="submit" onClick={handleUserChat}>
             <FaArrowAltCircleUp />
           </button>
         </div>
