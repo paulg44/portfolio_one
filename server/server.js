@@ -4,6 +4,7 @@ import express from "express";
 import pkg from "pg";
 import cors from "cors";
 import dotenv from "dotenv";
+import OpenAI from "openai";
 import { blogRoutes } from "./routes.js";
 
 dotenv.config();
@@ -23,6 +24,17 @@ export const pool = new Pool({
 
 app.use(express.json());
 app.use(cors());
+app.options("*", cors());
+
+const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
+
+const openai = new OpenAI({ apiKey });
+
+app.post("user-question", async (req, res) => {
+  if (!question) {
+    return res.status(400).send({ error: "Question is required" });
+  }
+});
 
 app.use("/api/blogs", blogRoutes);
 

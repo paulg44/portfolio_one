@@ -32,6 +32,11 @@ export default function Chatbot() {
           <li>
             <p>Hello duck! How can I help today?</p>
           </li>
+          {userChat.map((chat, index) => (
+            <li key={index}>
+              <p>{chat}</p>
+            </li>
+          ))}
         </ul>
       </div>
       <div className="questionContainer">
