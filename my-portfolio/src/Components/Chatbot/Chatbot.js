@@ -14,7 +14,7 @@ import { FaArrowAltCircleUp } from "react-icons/fa";
 export default function Chatbot() {
   const [userQuestion, setUserQuestion] = useState("");
   const [userChat, setUserChat] = useState([]);
-  const [computerChat, setcomputerChat] = useState([]);
+  const [computerChat, setComputerChat] = useState([]);
 
   const handleUserQuestion = (e) => {
     setUserQuestion(e.target.value);
@@ -25,6 +25,31 @@ export default function Chatbot() {
     console.log(userChat);
   };
 
+  const handleQuestionSubmit = async () => {
+    try {
+      const response = await fetch("http://localhost:4002/user-question", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          question: userQuestion,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Server error: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      console.log("Data sent successfully to server", data);
+      setComputerChat([...computerChat, data.message.content]);
+      handleUserChat();
+    } catch (error) {
+      console.error("Error sending data to server from client side", error);
+    }
+  };
+
   return (
     <section className="chatbotContainer">
       <div className="chatContainer">
@@ -33,6 +58,11 @@ export default function Chatbot() {
             <p>Hello duck! How can I help today?</p>
           </li>
           {userChat.map((chat, index) => (
+            <li key={index}>
+              <p>{chat}</p>
+            </li>
+          ))}
+          {computerChat.map((chat, index) => (
             <li key={index}>
               <p>{chat}</p>
             </li>
@@ -50,7 +80,7 @@ export default function Chatbot() {
             placeholder="Ask me anything..."
             required
           />
-          <button type="submit" onClick={handleUserChat}>
+          <button type="submit" onClick={handleQuestionSubmit}>
             <FaArrowAltCircleUp />
           </button>
         </div>
