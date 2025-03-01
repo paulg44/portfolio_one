@@ -3,3 +3,7 @@
   width: 400px;
   height: 60px;
 }
+
+.chatBox li:nth-child(2n) {
+  color: var(--bright-color);
+}
