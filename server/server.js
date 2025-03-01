@@ -25,7 +25,7 @@ export const pool = new Pool({
 app.use(
   cors({
     // origin: `${process.env.REACT_APP_FRONTEND_URL_PROD}`,
-    origin: "https://paulgarton.co.uk",
+    origin: "https://paulgarton.com",
     credentials: true,
   })
 );
