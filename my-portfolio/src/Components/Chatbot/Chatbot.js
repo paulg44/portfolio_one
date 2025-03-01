@@ -24,15 +24,19 @@ export default function Chatbot() {
 
   const handleQuestionSubmit = async () => {
     try {
-      const response = await fetch("http://localhost:4002/user-question", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          question: userQuestion,
-        }),
-      });
+      const response = await fetch(
+        // "http://localhost:4002/user-question",
+        "https://portfolio-one-dr9n.onrender.com/user-question",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            question: userQuestion,
+          }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error(`Server error: ${response.statusText}`);
