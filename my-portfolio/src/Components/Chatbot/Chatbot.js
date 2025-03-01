@@ -13,16 +13,10 @@ import { FaArrowAltCircleUp } from "react-icons/fa";
 
 export default function Chatbot() {
   const [userQuestion, setUserQuestion] = useState("");
-  const [userChat, setUserChat] = useState([]);
-  const [computerChat, setComputerChat] = useState([]);
+  const [chat, setChat] = useState([]);
 
   const handleUserQuestion = (e) => {
     setUserQuestion(e.target.value);
-  };
-
-  const handleUserChat = async () => {
-    setUserChat([...userChat, userQuestion]);
-    console.log(userChat);
   };
 
   const handleQuestionSubmit = async () => {
@@ -43,8 +37,8 @@ export default function Chatbot() {
 
       const data = await response.json();
       console.log("Data sent successfully to server", data);
-      setComputerChat([...computerChat, data.message.content]);
-      handleUserChat();
+      setChat([...chat, userQuestion, data.message.content]);
+      setUserQuestion("");
     } catch (error) {
       console.error("Error sending data to server from client side", error);
     }
@@ -57,14 +51,9 @@ export default function Chatbot() {
           <li>
             <p>Hello duck! How can I help today?</p>
           </li>
-          {userChat.map((chat, index) => (
+          {chat.map((chatText, index) => (
             <li key={index}>
-              <p>{chat}</p>
-            </li>
-          ))}
-          {computerChat.map((chat, index) => (
-            <li key={index}>
-              <p>{chat}</p>
+              <p>{chatText}</p>
             </li>
           ))}
         </ul>
@@ -73,6 +62,7 @@ export default function Chatbot() {
         <div className="textInput">
           <textarea
             onChange={handleUserQuestion}
+            value={userQuestion}
             className="chatbotInput"
             id="question"
             name="question"
