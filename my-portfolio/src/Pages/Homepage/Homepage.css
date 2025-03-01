@@ -168,6 +168,13 @@
   animation: slide-in 2.8s ease-in-out infinite;
 }
 
+/* Chatbot */
+.chatbotHomepage {
+  position: absolute;
+  right: -10%;
+  bottom: -10%;
+}
+
 /* Animations */
 @keyframes slide-in {
   0% {
@@ -230,5 +237,9 @@
   .about p {
     width: auto;
     margin: 20px 40px;
+  }
+
+  .chatbotHomepage {
+    visibility: hidden;
   }
 }

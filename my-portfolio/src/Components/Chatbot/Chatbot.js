@@ -5,11 +5,14 @@
 - use an array to add each new message, both from user and chatbot
 - reset array (state?) when user clicks off chatbot
 - or save locally for if they come back?
+- put a delay on the chatbot? so it looks like it's thinking?
 */
 
 import { useState } from "react";
 import "./chatbot.css";
 import { FaArrowAltCircleUp } from "react-icons/fa";
+import { Popup } from "reactjs-popup";
+import profileImg from "../../IMG/my_profile_pic.jpg";
 
 export default function Chatbot() {
   const [userQuestion, setUserQuestion] = useState("");
@@ -46,35 +49,42 @@ export default function Chatbot() {
 
   return (
     <section className="chatbotContainer">
-      <div className="chatContainer">
-        <ul className="chatBox">
-          <li>
-            <p>Hello duck! How can I help today?</p>
-          </li>
-          {chat.map((chatText, index) => (
-            <li key={index}>
-              <p>{chatText}</p>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className="questionContainer">
-        <div className="textInput">
-          <textarea
-            onChange={handleUserQuestion}
-            value={userQuestion}
-            className="chatbotInput"
-            id="question"
-            name="question"
-            rows="0"
-            placeholder="Ask me anything..."
-            required
-          />
-          <button type="submit" onClick={handleQuestionSubmit}>
-            <FaArrowAltCircleUp />
+      <Popup
+        trigger={
+          <button className="popUpBtn">
+            How can I help?...
+            <img src={profileImg} alt="user icon" />
           </button>
+        }
+        position={"top"}
+      >
+        <div className="chatContainer">
+          <ul className="chatBox">
+            {chat.map((chatText, index) => (
+              <li key={index}>
+                <p>{chatText}</p>
+              </li>
+            ))}
+          </ul>
         </div>
-      </div>
+        <div className="questionContainer">
+          <div className="textInput">
+            <textarea
+              onChange={handleUserQuestion}
+              value={userQuestion}
+              className="chatbotInput"
+              id="question"
+              name="question"
+              rows="0"
+              placeholder="How can I help duck?"
+              required
+            />
+            <button type="submit" onClick={handleQuestionSubmit}>
+              <FaArrowAltCircleUp />
+            </button>
+          </div>
+        </div>
+      </Popup>
     </section>
   );
 }

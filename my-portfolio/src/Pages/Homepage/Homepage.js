@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Homepage.css";
 import profileImg from "../../IMG/profile_test_2-PhotoRoom.png-PhotoRoom.png";
+import Chatbot from "../../Components/Chatbot/Chatbot";
 
 function Homepage() {
   const textArray = [
@@ -62,6 +63,9 @@ function Homepage() {
             </code>
             to view some of my work. Thanks for your time, Paul.
           </p>
+        </div>
+        <div className="chatbotHomepage">
+          <Chatbot />
         </div>
       </main>
 

@@ -1,9 +1,33 @@
+.chatbotContainer {
+  width: 100%;
+}
+
 .chatbotInput {
   border: none;
   width: 400px;
-  height: 60px;
+  height: 30px;
+  padding: 5px 10px;
 }
 
 .chatBox li:nth-child(2n) {
   color: var(--bright-color);
+}
+
+.popUpBtn {
+  cursor: pointer;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  border: 2px solid var(--grey-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+
+  img {
+    border-radius: 50%;
+    padding: 3px;
+    margin: 0 5px;
+    z-index: 1;
+    border: 1px solid var(--bright-color);
+  }
 }
