@@ -13,7 +13,6 @@ dotenv.config();
 const { Pool } = pkg;
 const app = express();
 
-const port = process.env.REACT_APP_PORT;
 const connectionString = process.env.REACT_APP_BLOG_DB_STRING;
 
 export const pool = new Pool({
@@ -32,7 +31,6 @@ const limiter = rateLimit({
   // keyGenerator: (req) => req.headers["x-api-key"] || req.ip,
 });
 
-app.use(limiter);
 app.use(
   cors({
     origin: `${process.env.REACT_APP_FRONTEND_URL_PROD}`,
@@ -40,19 +38,11 @@ app.use(
   })
 );
 
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://paulgarton.co.uk");
-  res.header("Access-Control-Allow-Credentials", "true");
-  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-});
-
 app.options("*", cors());
 app.use(express.json());
+app.use(limiter);
+
+const port = process.env.REACT_APP_PORT;
 
 const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
 
