@@ -22,6 +22,17 @@ export const pool = new Pool({
   },
 });
 
+app.use(
+  cors({
+    // origin: `${process.env.REACT_APP_FRONTEND_URL_PROD}`,
+    origin: "https://paulgarton.co.uk",
+    credentials: true,
+  })
+);
+
+app.options("*", cors());
+app.use(express.json());
+
 const limiter = rateLimit({
   windowMs: 60 * 1000,
   max: 2,
@@ -30,22 +41,11 @@ const limiter = rateLimit({
   legacyHeaders: false,
   // keyGenerator: (req) => req.headers["x-api-key"] || req.ip,
 });
-
-app.use(
-  cors({
-    origin: `${process.env.REACT_APP_FRONTEND_URL_PROD}`,
-    credentials: true,
-  })
-);
-
-app.options("*", cors());
-app.use(express.json());
 app.use(limiter);
 
 const port = process.env.REACT_APP_PORT;
 
 const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
-
 const openai = new OpenAI({ apiKey });
 
 app.post("/user-question", limiter, async (req, res) => {
