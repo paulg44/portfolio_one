@@ -11,12 +11,16 @@
 import { useState } from "react";
 import "./chatbot.css";
 import { FaArrowAltCircleUp } from "react-icons/fa";
-import { Popup } from "reactjs-popup";
 import profileImg from "../../IMG/my_profile_pic.jpg";
 
 export default function Chatbot() {
+  const [open, setOpen] = useState(false);
+
   const [userQuestion, setUserQuestion] = useState("");
   const [chat, setChat] = useState([]);
+
+  const closeModal = () => setOpen(false);
+  const toggleModal = () => setOpen(!open);
 
   const handleUserQuestion = (e) => {
     setUserQuestion(e.target.value);
@@ -25,14 +29,14 @@ export default function Chatbot() {
   const handleQuestionSubmit = async () => {
     try {
       const response = await fetch(
-        // "http://localhost:4002/user-question",
-        "https://portfolio-one-dr9n.onrender.com/user-question",
+        "http://localhost:4002/user-question",
+        // "https://portfolio-one-dr9n.onrender.com/user-question",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          credentials: "include",
+          // credentials: "include",
           body: JSON.stringify({
             question: userQuestion,
           }),
@@ -54,42 +58,50 @@ export default function Chatbot() {
 
   return (
     <section className="chatbotContainer">
-      <Popup
-        trigger={
-          <button className="popUpBtn">
-            How can I help?...
-            <img src={profileImg} alt="user icon" />
-          </button>
-        }
-        position={"top"}
-      >
-        <div className="chatContainer">
-          <ul className="chatBox">
-            {chat.map((chatText, index) => (
-              <li key={index}>
-                <p>{chatText}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="questionContainer">
-          <div className="textInput">
-            <textarea
-              onChange={handleUserQuestion}
-              value={userQuestion}
-              className="chatbotInput"
-              id="question"
-              name="question"
-              rows="0"
-              placeholder="How can I help duck?"
-              required
-            />
-            <button type="submit" onClick={handleQuestionSubmit}>
-              <FaArrowAltCircleUp />
+      <button className="popUpBtn" onClick={toggleModal}>
+        How can I help?...
+        <img src={profileImg} alt="user icon" />
+      </button>
+
+      {open && (
+        <>
+          <div
+            className="backgroundOverlay"
+            onClick={() => setOpen(false)}
+          ></div>
+          <div className={`chatContainer ${open ? "open" : ""}`}>
+            <button className="closeModal" onClick={closeModal}>
+              &times;
             </button>
+            <ul className="chatBox">
+              {chat.map((chatText, index) => (
+                <li key={index}>
+                  <p>{chatText}</p>
+                </li>
+              ))}
+            </ul>
+            <div className="questionContainer">
+              <textarea
+                onChange={handleUserQuestion}
+                value={userQuestion}
+                className="chatbotInput"
+                id="question"
+                name="question"
+                rows="0"
+                placeholder="How can I help duck?"
+                required
+              />
+              <button
+                type="submit"
+                className="chatSubmitBtn"
+                onClick={handleQuestionSubmit}
+              >
+                <FaArrowAltCircleUp />
+              </button>
+            </div>
           </div>
-        </div>
-      </Popup>
+        </>
+      )}
     </section>
   );
 }
