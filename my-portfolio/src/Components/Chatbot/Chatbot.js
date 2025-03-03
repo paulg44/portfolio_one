@@ -29,14 +29,14 @@ export default function Chatbot() {
   const handleQuestionSubmit = async () => {
     try {
       const response = await fetch(
-        "http://localhost:4002/user-question",
-        // "https://portfolio-one-dr9n.onrender.com/user-question",
+        // "http://localhost:4002/user-question",
+        "https://portfolio-one-dr9n.onrender.com/user-question",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          // credentials: "include",
+          credentials: "include",
           body: JSON.stringify({
             question: userQuestion,
           }),

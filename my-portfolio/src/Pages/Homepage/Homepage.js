@@ -64,10 +64,10 @@ function Homepage() {
             to view some of my work. Thanks for your time, Paul.
           </p>
         </div>
-        <div className="chatbotHomepage">
-          <Chatbot />
-        </div>
       </main>
+      <div className="chatbotHomepage">
+        <Chatbot />
+      </div>
 
       {/* <h1 className="construction">CURRENTLY UNDER CONSTRUCTION  (Refactor to React) COME BACK MONDAY 31ST JULY</h1> */}
     </div>

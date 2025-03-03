@@ -228,14 +228,14 @@
 
   .middle-section h2 {
     transform: rotate(0deg);
-    margin: 0 20px;
+    margin: 0;
     animation: fade-in 4s ease-in;
   }
 
   .right-section {
     margin: 0;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 260px;
+    margin-bottom: 300px;
   }
 
   .left-section,
@@ -256,7 +256,7 @@
   }
 
   .individual-project h3 {
-    width: 70%;
+    width: 80%;
     margin-bottom: 10px;
   }
 
