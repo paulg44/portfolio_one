@@ -4,7 +4,6 @@ import express from "express";
 import pkg from "pg";
 import cors from "cors";
 import dotenv from "dotenv";
-import { rateLimit } from "express-rate-limit";
 import OpenAI from "openai";
 import { blogRoutes } from "./routes.js";
 
@@ -35,22 +34,12 @@ app.use(
 app.options("*", cors());
 app.use(express.json());
 
-const limiter = rateLimit({
-  windowMs: 60 * 1000,
-  max: 2,
-  message: { error: "Too many requests! Please wait before trying again" },
-  standardHeaders: true,
-  legacyHeaders: false,
-  // keyGenerator: (req) => req.headers["x-api-key"] || req.ip,
-});
-app.use(limiter);
-
 const port = process.env.REACT_APP_PORT;
 
 const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
 const openai = new OpenAI({ apiKey });
 
-app.post("/user-question", limiter, async (req, res) => {
+app.post("/user-question", async (req, res) => {
   const { question } = req.body;
 
   if (!question) {
