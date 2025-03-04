@@ -171,8 +171,8 @@
 /* Chatbot */
 .chatbotHomepage {
   position: absolute;
-  right: -10%;
-  bottom: -10%;
+  right: 40px;
+  bottom: 100px;
 }
 
 /* Animations */
@@ -243,6 +243,7 @@
   .chatbotHomepage {
     position: relative;
     bottom: 10px;
+    left: 20px;
     margin: 20px 0;
   }
 }

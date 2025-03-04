@@ -74,6 +74,10 @@ export default function Chatbot() {
               &times;
             </button>
             <ul className="chatBox">
+              <li>
+                !!This is currently under construction. It works but it needs
+                tweaking and styling more!!
+              </li>
               {chat.map((chatText, index) => (
                 <li key={index}>
                   <p>{chatText}</p>
