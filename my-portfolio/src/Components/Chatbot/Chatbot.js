@@ -78,6 +78,18 @@ export default function Chatbot() {
                 !!This is currently under construction. It works but it needs
                 tweaking and styling more!!
               </li>
+              <li>
+                !!This is currently under construction. It works but it needs
+                tweaking and styling more!!
+              </li>
+              <li>
+                !!This is currently under construction. It works but it needs
+                tweaking and styling more!!
+              </li>
+              <li>
+                !!This is currently under construction. It works but it needs
+                tweaking and styling more!!
+              </li>
               {chat.map((chatText, index) => (
                 <li key={index}>
                   <p>{chatText}</p>
@@ -92,7 +104,7 @@ export default function Chatbot() {
                 id="question"
                 name="question"
                 rows="0"
-                placeholder="How can I help duck?"
+                placeholder="What would you like to know?..."
                 required
               />
               <button

@@ -35,10 +35,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: auto;
-    width: auto;
+    width: 500px;
     z-index: 20;
     opacity: 0;
-    background-color: var(--grey-color);
+    border: 2px solid var(--bright-color);
+    border-radius: 10px;
+    background-color: var(--dark-color);
     visibility: hidden;
     display: flex;
     flex-direction: column;
@@ -50,21 +52,25 @@
     }
 
     .chatBox {
-      border: 2px solid var(--bright-color);
+      border: 1px solid var(--bright-color);
+      background-color: var(--dark-color);
+      padding: 10px;
+      margin: 10px;
       display: flex;
       flex-direction: column;
 
       li {
         background-color: var(--dark-color);
-        border: none;
-        border-radius: 20px;
+        border: 2px solid var(--grey-color);
+        border-radius: 15px;
         padding: 10px;
         width: 80%;
-        margin: 5px;
+        margin: 15px 5px;
       }
 
       li:nth-child(2n) {
-        color: var(--bright-color);
+        /* color: var(--bright-color); */
+        border: 5px solid var(--bright-color);
         text-align: right;
         margin-left: auto;
       }
@@ -77,9 +83,10 @@
 
       .chatbotInput {
         border: none;
-        width: 100%;
+        width: 400px;
         height: 30px;
         padding: 5px 10px;
+        margin: 10px;
       }
 
       .chatSubmitBtn {
@@ -89,7 +96,7 @@
         transform: translateY(-50%);
         border: none;
         color: var(--bright-color);
-        font-size: 22px;
+        font-size: 32px;
         background-color: transparent;
       }
     }
@@ -103,9 +110,9 @@
       right: -10px;
       top: -10px;
       font-size: 24px;
-      background-color: var(--grey-color);
+      background-color: var(--bright-color);
       border-radius: 18px;
-      border: 1px solid var(--bright-color);
+      border: 1px solid var(--dark-color);
     }
   }
 }
