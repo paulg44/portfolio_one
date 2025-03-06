@@ -1,0 +1,22 @@
+{
+  "name": "Paul",
+  "location": "Derby",
+  "age": 42,
+  "family": "Wife and two children (7 + 5)",
+  "bio": "I am a software developer based in Derby",
+  "goals": "I am looking for my first role within the tech community",
+  "projects": [
+    {
+      "name": "Shardlow St James FC",
+      "description": "A complete website for a local amateur football club. It uses the FA API to integrate the 4 teams fixtures, results and table data. Has a web scraper built using Playwright to scrape data from Instagram.",
+      "tech stack": "React, Node.js, Express, Framer Motion, Nock, React Testing Library, React Router, React Spring, Playwright, FS-Extra, node-cron, simple-git",
+      "website": "https://ssjfc.co.uk/"
+    },
+    {
+      "name": "AMH Decorating",
+      "description": "A complete website for a local painter and decorator to be more visual and generate more custom. Built from scratch using Figma and designed in collaboration with the client",
+      "tech stack": "React, React Testing Library, React Router",
+      "website": "https://amhdecorating.co.uk/"
+    }
+  ]
+}
