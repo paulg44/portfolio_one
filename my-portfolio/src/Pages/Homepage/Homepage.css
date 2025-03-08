@@ -209,8 +209,8 @@
     height: fit-content;
   }
 
-  .main img {
-    /* visibility: hidden; */
+  .main-img {
+    visibility: hidden;
     border: none;
   }
 
