@@ -1,22 +1,50 @@
 {
-  "name": "Paul",
-  "location": "Derby",
-  "age": 42,
-  "family": "Wife and two children (7 + 5)",
-  "bio": "I am a software developer based in Derby",
-  "goals": "I am looking for my first role within the tech community",
+  "aboutMe": {
+    "name": "Paul",
+    "location": "Derby",
+    "age": 40,
+    "family": "Wife (Hannah) and two children (7 (Eli) + 5 (Ivy))",
+    "interests": "Ultra running, Karate, Football, Ice Hockey, Boxing, Combat Sports, Dog Walks with Tig, Software development, Gaming (remember the good old Verdansk days), Arduino projects, Building wooden model kits like Rokr, DIY",
+    "bio": "I am a software developer based in Derby. I have spent the previous years of my career as a painter and decorator and I'm ready to wash out the rollers and brushes one more time and swap the brushstrokes for keystrokes. I have a passion for being creative and really enjoy all aspects of software development, from design all the way through to code.",
+    "goals": "I am looking for my first role within the tech community. I want to make a difference in the world through software and give back to the same kind of communities I grew up in."
+  },
+  "tech and interview or recruiters": {
+    "techStack": "React, Node.js, Express, Framer Motion, Nock, React Testing Library, React Router, Stripe, Firebase, SupaBase, cors, dotenv, Git, GitHub, React Spring, Playwright, FS-Extra, node-cron, simple-git",
+    "transferrable skills": [
+      {
+        "name": "Problem Solving",
+        "example": "Problem Solving"
+      }
+    ]
+  },
+  " all projects": "All projects use Netlify to host the frontend and Render to host the backend",
   "projects": [
     {
       "name": "Shardlow St James FC",
       "description": "A complete website for a local amateur football club. It uses the FA API to integrate the 4 teams fixtures, results and table data. Has a web scraper built using Playwright to scrape data from Instagram.",
-      "tech stack": "React, Node.js, Express, Framer Motion, Nock, React Testing Library, React Router, React Spring, Playwright, FS-Extra, node-cron, simple-git",
+      "tech stack": {
+        "frontend": "React, Framer Motion, React Router, React Spring,",
+        "backend": "Node.js, Express, Nock, React Testing Library, Playwright, FS-Extra, node-cron, simple-git"
+      },
       "website": "https://ssjfc.co.uk/"
     },
     {
       "name": "AMH Decorating",
       "description": "A complete website for a local painter and decorator to be more visual and generate more custom. Built from scratch using Figma and designed in collaboration with the client",
-      "tech stack": "React, React Testing Library, React Router",
+      "tech stack": {
+        "frontend": "React,  React Router",
+        "backend": "No backend"
+      },
       "website": "https://amhdecorating.co.uk/"
+    },
+    {
+      "name": "Ivy's Game",
+      "description": "I asked my daughter to come up with a game and she had the idea of a user copying an image and getting a score based on the likeness. So I ran with that and did some research into an educational game. It led me down the path of learning how to use a canvas in React, how to send data to and from client and server, how to parse that data and get exactly what I want. How to transform aan image to a base64 string, and how to use an AI engine to compare the image. Among many other things.",
+      "tech stack": {
+        "frontend": "React, React Router, Konva, react-colorful",
+        "backend": "Node.js, Express, Gemini AI, fs-extra"
+      },
+      "website": "https://ivysgame.netlify.app/"
     }
   ]
 }
