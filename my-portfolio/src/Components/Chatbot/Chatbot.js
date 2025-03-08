@@ -15,7 +15,7 @@ import profileImg from "../../IMG/my_profile_pic.jpg";
 
 export default function Chatbot() {
   const [open, setOpen] = useState(false);
-  const [userQuestion, setUserQuestion] = useState("");
+  const [userQuestion, setUserQuestion] = useState();
   const [chat, setChat] = useState([]);
 
   const chatEndRef = useRef(null);
@@ -36,16 +36,32 @@ export default function Chatbot() {
   };
 
   const handleQuestionSubmit = async () => {
+    if (!userQuestion.trim()) return;
+
+    const waitingOnMessageArr = [
+      "Thinking me duck...",
+      "Hmmmmm...",
+      "Hand on a sec...",
+    ];
+
+    let randomWaitingMessage = Math.floor(
+      Math.random() * waitingOnMessageArr.length
+    );
+    let waitingMessage = waitingOnMessageArr[randomWaitingMessage];
+
+    setChat([...chat, userQuestion, waitingMessage]);
+    setUserQuestion("");
+
     try {
       const response = await fetch(
-        "http://localhost:4002/user-question",
-        // "https://portfolio-one-dr9n.onrender.com/user-question",
+        // "http://localhost:4002/user-question",
+        "https://portfolio-one-dr9n.onrender.com/user-question",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          // credentials: "include",
+          credentials: "include",
           body: JSON.stringify({
             question: userQuestion,
           }),
@@ -57,11 +73,27 @@ export default function Chatbot() {
       }
 
       const data = await response.json();
-      console.log("Data sent successfully to server", data);
-      setChat([...chat, userQuestion, data.message.content]);
-      setUserQuestion("");
+
+      const delay = Math.floor(Math.random() * 1000) + 500;
+      setTimeout(() => {
+        setChat((prevChat) => [...prevChat.slice(0, -1), data.message.content]);
+      }, delay);
     } catch (error) {
       console.error("Error sending data to server from client side", error);
+
+      setTimeout(() => {
+        setChat((prevChat) => [
+          ...prevChat.slice(0, -1),
+          "Oops! Something went wrong me duck. Please try again.",
+        ]);
+      }, 1000);
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      handleQuestionSubmit();
     }
   };
 
@@ -94,6 +126,7 @@ export default function Chatbot() {
             <div className="questionContainer">
               <textarea
                 onChange={handleUserQuestion}
+                onKeyDown={handleKeyDown}
                 value={userQuestion}
                 className="chatbotInput"
                 id="question"
