@@ -8,16 +8,25 @@
 - put a delay on the chatbot? so it looks like it's thinking?
 */
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./chatbot.css";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 import profileImg from "../../IMG/my_profile_pic.jpg";
 
 export default function Chatbot() {
   const [open, setOpen] = useState(false);
-
   const [userQuestion, setUserQuestion] = useState("");
   const [chat, setChat] = useState([]);
+
+  const chatEndRef = useRef(null);
+
+  useEffect(() => {
+    if (chatEndRef.current) {
+      chatEndRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
+    }
+  }, [chat]);
+
+  if (!chat) return null;
 
   const closeModal = () => setOpen(false);
   const toggleModal = () => setOpen(!open);
@@ -29,14 +38,14 @@ export default function Chatbot() {
   const handleQuestionSubmit = async () => {
     try {
       const response = await fetch(
-        // "http://localhost:4002/user-question",
-        "https://portfolio-one-dr9n.onrender.com/user-question",
+        "http://localhost:4002/user-question",
+        // "https://portfolio-one-dr9n.onrender.com/user-question",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          credentials: "include",
+          // credentials: "include",
           body: JSON.stringify({
             question: userQuestion,
           }),
@@ -74,31 +83,13 @@ export default function Chatbot() {
               &times;
             </button>
             <ul className="chatBox">
-              <li>
-                !!This is currently under construction. It works but it needs
-                tweaking and styling more!!
-              </li>
-              <li>
-                !!This is currently under construction. It works but it needs
-                tweaking and styling more!!
-              </li>
-              <li>
-                !!This is currently under construction. It works but it needs
-                tweaking and styling more!!
-              </li>
-              <li>
-                !!This is currently under construction. It works but it needs
-                tweaking and styling more!!
-              </li>
-              <li>
-                !!This is currently under construction. It works but it needs
-                tweaking and styling more!!
-              </li>
+              <li>Awaiting user message....</li>
               {chat.map((chatText, index) => (
                 <li key={index}>
                   <p>{chatText}</p>
                 </li>
               ))}
+              <div ref={chatEndRef}></div>
             </ul>
             <div className="questionContainer">
               <textarea
