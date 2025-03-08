@@ -34,8 +34,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: auto;
-    width: 500px;
+    height: 600px;
+    width: 550px;
     z-index: 20;
     opacity: 0;
     border: 2px solid var(--bright-color);
@@ -58,6 +58,7 @@
       margin: 10px;
       display: flex;
       flex-direction: column;
+      overflow-y: scroll;
 
       li {
         background-color: var(--dark-color);
@@ -66,31 +67,6 @@
         padding: 10px;
         width: 80%;
         margin: 15px 5px;
-
-        &::before {
-          position: absolute;
-          content: "";
-          width: 0px;
-          height: 0px;
-          position: absolute;
-          border-left: 10px solid var(--grey-color);
-          border-right: 10px solid transparent;
-          border-top: 10px solid var(--grey-color);
-          border-bottom: 10px solid transparent;
-          margin-top: 77px;
-        }
-
-        /* &::after {
-          position: absolute;
-          content: "";
-          width: 0px;
-          height: 0px;
-          position: absolute;
-          border-left: 7px solid var(--dark-color);
-          border-right: 7px solid transparent;
-          border-top: 7px solid var(--dark-color);
-          border-bottom: 7px solid transparent;
-        } */
       }
 
       li:nth-child(2n) {
@@ -98,14 +74,6 @@
         border: 5px solid var(--bright-color);
         text-align: right;
         margin-left: auto;
-
-        &::before {
-          border-right: 10px solid var(--bright-color);
-          border-left: 10px solid transparent;
-          border-top: 10px solid var(--bright-color);
-          border-bottom: 10px solid transparent;
-          right: 40px;
-        }
       }
     }
 
@@ -116,7 +84,7 @@
 
       .chatbotInput {
         border: none;
-        width: 400px;
+        width: 480px;
         height: 50px;
         padding: 5px 10px;
         margin: 0 10px;
