@@ -89,7 +89,7 @@ function Projects() {
               </div>
             ))}
             {/* I may need this for mobile view */}
-            {/* <button
+            <button
               className="carousel-prev"
               onClick={prevPage}
               disabled={currentPage === 1}
@@ -105,7 +105,7 @@ function Projects() {
               disabled={currentPage === totalPages}
             >
               <FaArrowRight />
-            </button> */}
+            </button>
           </div>
         </div>
       </div>
