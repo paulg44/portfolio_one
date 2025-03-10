@@ -8,13 +8,20 @@ import projectsData from "../../data/projects.json";
 import "./Projects.css";
 
 function Projects() {
-  const [activeProjectIndex, setActiveProjectIndex] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
+  const projectsPerPage = 6;
 
-  const changeProject = (step) => {
-    const nextIndex =
-      (activeProjectIndex + step + projectsData.length) % projectsData.length;
-    setActiveProjectIndex(nextIndex);
-  };
+  const totalPages = Math.ceil(projectsData.projects.length / projectsPerPage);
+
+  const startIndex = (currentPage - 1) * projectsPerPage;
+  const selectedProjects = projectsData.projects.slice(
+    startIndex,
+    startIndex + projectsPerPage
+  );
+
+  const nextPage = () =>
+    setCurrentPage((prev) => Math.min(prev + 1, totalPages));
+  const prevPage = () => setCurrentPage((prev) => Math.min(prev - 1, 1));
 
   return (
     <div className="projects">
@@ -59,17 +66,8 @@ function Projects() {
       <div className="right-section">
         <div className="right-container">
           <div className="inner-project-container">
-            {projectsData.projects.map((project, index) => (
-              <div
-                key={index}
-                // className={`project ${
-                //   index === activeProjectIndex ? "active" : ""
-                // }`}
-                // style={{
-                //   zIndex: index === activeProjectIndex ? 1 : 0,
-                //   pointerEvents: index === activeProjectIndex ? "auto" : "none",
-                // }}
-              >
+            {selectedProjects.map((project, index) => (
+              <div key={index} className="projectCard">
                 <h3>
                   {project.title}
                   <a
@@ -85,13 +83,24 @@ function Projects() {
                 </h3>
 
                 <img src={project.imgSrc} alt={project.imgAlt} />
-                {/* <p>{project.description}</p> */}
               </div>
             ))}
-            <button className="carousel-prev" onClick={() => changeProject(-1)}>
+            {/* I may need this for mobile view */}
+            <button
+              className="carousel-prev"
+              onClick={prevPage}
+              disabled={currentPage === 1}
+            >
               <FaArrowLeft />
             </button>
-            <button className="carousel-next" onClick={() => changeProject(1)}>
+            <span>
+              Page {currentPage} of {totalPages}
+            </span>
+            <button
+              className="carousel-next"
+              onClick={nextPage}
+              disabled={currentPage === totalPages}
+            >
               <FaArrowRight />
             </button>
           </div>

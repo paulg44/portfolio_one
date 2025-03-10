@@ -5,7 +5,10 @@
       "websiteLink": "https://ssjfc.netlify.app/",
       "githubLink": "https://github.com/paulg44/shardlow_st_james",
       "imgSrc": "/projectImages/ssj_homepage.jpg",
-      "description": "A project I have taken on for my local amateur football club. Built using React, Bootstrap Node and Express. I have also integrated some real time data from the FA website and is fully tested using Cypress and React Testing Library, including mocks for the API. Currently building a web scraper to take a specific part of Instagram URL to update the news section automatically."
+      "shortDescription": "Local football club, complete website. All information and socials embedded",
+      "description": "A project I have taken on for my local amateur football club. Built using React, Bootstrap Node and Express. I have also integrated some real time data from the FA website and is fully tested using Cypress and React Testing Library, including mocks for the API. Currently building a web scraper to take a specific part of Instagram URL to update the news section automatically.",
+      "tech": ["React", "Node.js", "Express", "Playwright"],
+      "thingsLearnt": "I learnt a huge amount about web scraping and the FA's arcaic API!"
     },
     {
       "title": "Ivy's Drawing Game",

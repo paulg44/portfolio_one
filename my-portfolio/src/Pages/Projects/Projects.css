@@ -92,6 +92,13 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, auto);
+  grid-gap: 20px;
+
+  .projectCard {
+    width: 120px;
+    height: 160px;
+    border: 2px solid var(--bright-color);
+  }
 }
 
 .individual-project {
