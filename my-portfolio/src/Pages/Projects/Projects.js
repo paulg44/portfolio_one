@@ -71,10 +71,8 @@ function Projects() {
                 key={project.id}
                 className={`projectCard card${project.styling}`}
               >
-                <h3>{project.title}</h3>
-
                 <img src={project.imgSrc} alt={project.imgAlt} />
-                <div className="projectIcons">
+                {/* <div className="projectIcons">
                   <a
                     href={project.websiteLink}
                     target="_blank"
@@ -85,12 +83,13 @@ function Projects() {
                   <a href={project.githubLink} target="_blank" rel="noreferrer">
                     <FaGithub className="rightIcon" />
                   </a>
-                </div>
+                </div> */}
               </div>
             ))}
-            {/* I may need this for mobile view */}
+          </div>
+          <div className="scrollBtns">
             <button
-              className="carousel-prev"
+              className="prevBtn"
               onClick={prevPage}
               disabled={currentPage === 1}
             >
@@ -100,7 +99,7 @@ function Projects() {
               Page {currentPage} of {totalPages}
             </span>
             <button
-              className="carousel-next"
+              className="nextBtn"
               onClick={nextPage}
               disabled={currentPage === totalPages}
             >

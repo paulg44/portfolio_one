@@ -80,47 +80,47 @@
 /* Right Project Section */
 .right-section {
   width: 60%;
-  margin: 0 40px;
   animation: fade-in 4s ease-in;
 }
 
 .right-container {
   position: relative;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .inner-project-container {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, auto);
   grid-gap: 20px;
   justify-content: center;
+  text-align: center;
 
   .projectCard {
     border: 2px solid var(--bright-color);
-    width: 200px;
-    height: 260px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 6px;
-
-    h3 {
-      font-size: 18px;
-      text-align: center;
-    }
+    border-radius: 5px;
 
     img {
       width: 100%;
+      height: 100%;
       margin: 6px 0;
+      object-fit: cover;
     }
 
-    /* &.cardone {
-      grid-column: 2 / span 2;
-      grid-row: span 1;
+    &.cardone {
+      grid-column: 1 / span 2;
+      grid-row: span 4;
     }
     &.cardtwo {
-      grid-column: span 1;
+      grid-column: span 2;
       grid-row: span 1;
     }
     &.cardthree {
@@ -128,34 +128,18 @@
       grid-row: span 1;
     }
     &.cardfour {
-      grid-column: 2 / span 1;
-      grid-row: span 2;
+      grid-column: span 1;
+      grid-row: span 4;
     }
     &.cardfive {
-      grid-column: span 2;
-      grid-row: span 2;
+      grid-column: span 1;
+      grid-row: span 3;
     }
     &.cardsix {
-      grid-column: span 1;
-      grid-row: span 2;
-    } */
+      grid-column: span 2;
+      grid-row: span 3;
+    }
   }
-}
-
-.individual-project h3 {
-  padding: 2px;
-  width: 50%;
-  border-bottom: 2px solid var(--bright-color);
-}
-
-.individual-project p {
-  padding: 0 30px;
-}
-
-.individual-project img {
-  margin: 20px 30px;
-  width: 80%;
-  border-radius: 5px;
 }
 
 /* Animation */
@@ -171,49 +155,36 @@
   }
 }
 
-/* Test carosel */
-
-.project {
-  width: 100%;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: opacity 0.4s ease-in-out;
+.scrollBtns {
+  margin-top: 20px;
 }
 
-.project.active {
-  opacity: 1;
-}
-
-.carousel-prev,
-.carousel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+.prevBtn,
+.nextBtn {
   background-color: transparent;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
   border: none;
+  margin: 0 10px;
 }
 
-.carousel-prev {
+.prevBtn {
   left: -10px;
 }
 
-.carousel-next {
+.nextBtn {
   right: -10px;
 }
 
-.carousel-prev:hover,
-.carousel-next:hover {
+.prevBtn:hover,
+.nextBtn:hover {
   color: var(--bright-color);
 }
 
-.carousel-next:active,
-.carousel-prev:active {
+.nextBtn:active,
+.prevBtn:active {
   animation: bounce 0.5s ease-in-out;
 }
 

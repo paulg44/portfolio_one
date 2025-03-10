@@ -32,11 +32,11 @@
     },
     {
       "id": 4,
-      "title": "ConsensUs",
-      "websiteLink": "https://consensusgpt.netlify.app/",
-      "githubLink": "https://github.com/BC14-GPT-great-programming-team/Great-Programming-Team-Final-Project",
-      "imgSrc": "/projectImages/consensus.jpg",
-      "description": "Our SoC final project. An App designed for multiple users who can't decide what to do on a night out, this app saves time by coming to a decision for you, using rounds of voting. This project was all about teamwork, collaboration and honestly, fun!",
+      "title": "AMH Decorators",
+      "websiteLink": "https://amhdecorating.co.uk/",
+      "githubLink": "https://github.com/paulg44/AMH-Decorators",
+      "imgSrc": "/projectImages/amh_mobile_view.png",
+      "description": "Complete website from design, build, deploy, maintain.",
       "styling": "four"
     },
     {
@@ -100,11 +100,12 @@
     },
     {
       "id": 12,
-      "title": "AMH Decorators",
-      "websiteLink": "https://amhdecorating.co.uk/",
-      "githubLink": "https://github.com/paulg44/AMH-Decorators",
-      "imgSrc": "/projectImages/amh_mobile_view.png",
-      "description": "Complete website from design, build, deploy, maintain."
+      "title": "ConsensUs",
+      "websiteLink": "https://consensusgpt.netlify.app/",
+      "githubLink": "https://github.com/BC14-GPT-great-programming-team/Great-Programming-Team-Final-Project",
+      "imgSrc": "/projectImages/consensus.jpg",
+      "description": "Our SoC final project. An App designed for multiple users who can't decide what to do on a night out, this app saves time by coming to a decision for you, using rounds of voting. This project was all about teamwork, collaboration and honestly, fun!",
+      "styling": "four"
     }
   ]
 }
