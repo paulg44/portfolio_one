@@ -66,10 +66,15 @@ function Projects() {
       <div className="right-section">
         <div className="right-container">
           <div className="inner-project-container">
-            {selectedProjects.map((project, index) => (
-              <div key={index} className="projectCard">
-                <h3>
-                  {project.title}
+            {selectedProjects.map((project) => (
+              <div
+                key={project.id}
+                className={`projectCard card${project.styling}`}
+              >
+                <h3>{project.title}</h3>
+
+                <img src={project.imgSrc} alt={project.imgAlt} />
+                <div className="projectIcons">
                   <a
                     href={project.websiteLink}
                     target="_blank"
@@ -80,13 +85,11 @@ function Projects() {
                   <a href={project.githubLink} target="_blank" rel="noreferrer">
                     <FaGithub className="rightIcon" />
                   </a>
-                </h3>
-
-                <img src={project.imgSrc} alt={project.imgAlt} />
+                </div>
               </div>
             ))}
             {/* I may need this for mobile view */}
-            <button
+            {/* <button
               className="carousel-prev"
               onClick={prevPage}
               disabled={currentPage === 1}
@@ -102,7 +105,7 @@ function Projects() {
               disabled={currentPage === totalPages}
             >
               <FaArrowRight />
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 {
   "projects": [
     {
+      "id": 1,
       "title": "Shardlow St James",
       "websiteLink": "https://ssjfc.netlify.app/",
       "githubLink": "https://github.com/paulg44/shardlow_st_james",
@@ -8,44 +9,56 @@
       "shortDescription": "Local football club, complete website. All information and socials embedded",
       "description": "A project I have taken on for my local amateur football club. Built using React, Bootstrap Node and Express. I have also integrated some real time data from the FA website and is fully tested using Cypress and React Testing Library, including mocks for the API. Currently building a web scraper to take a specific part of Instagram URL to update the news section automatically.",
       "tech": ["React", "Node.js", "Express", "Playwright"],
-      "thingsLearnt": "I learnt a huge amount about web scraping and the FA's arcaic API!"
+      "thingsLearnt": "I learnt a huge amount about web scraping and the FA's arcaic API!",
+      "styling": "one"
     },
     {
+      "id": 2,
       "title": "Ivy's Drawing Game",
       "websiteLink": "https://ivysgame.netlify.app/",
       "githubLink": "https://github.com/paulg44/drawing_game",
       "imgSrc": "",
-      "description": "This is a personal project using an idea my daughter had for a game about copying an image on a screen. I have ran with this and I am building out an educational game where a user draws on a canvas then an AI checks the likeness of the users drawing. Learnt so much in this so far, with how to work with canvas, images and how to incorporate an AI into a project just to name a few."
+      "description": "This is a personal project using an idea my daughter had for a game about copying an image on a screen. I have ran with this and I am building out an educational game where a user draws on a canvas then an AI checks the likeness of the users drawing. Learnt so much in this so far, with how to work with canvas, images and how to incorporate an AI into a project just to name a few.",
+      "styling": "two"
     },
     {
+      "id": 3,
       "title": "Playwright Web Scraper",
       "websiteLink": "",
       "githubLink": "https://github.com/paulg44/basic-web-scraper",
       "imgSrc": "",
-      "description": "This Playwright web scraper was built to help me gain some knowledge into web scraping and data manipulation. It currently saves an array of href's on a particular page. I have also added a cron job to the GitHub Actions that runs once a day at 9pm. This tool is currently being built into my SSJ site to show the latest news from Instagram."
+      "description": "This Playwright web scraper was built to help me gain some knowledge into web scraping and data manipulation. It currently saves an array of href's on a particular page. I have also added a cron job to the GitHub Actions that runs once a day at 9pm. This tool is currently being built into my SSJ site to show the latest news from Instagram.",
+      "styling": "three"
     },
     {
+      "id": 4,
       "title": "ConsensUs",
       "websiteLink": "https://consensusgpt.netlify.app/",
       "githubLink": "https://github.com/BC14-GPT-great-programming-team/Great-Programming-Team-Final-Project",
       "imgSrc": "",
-      "description": "Our SoC final project. An App designed for multiple users who can't decide what to do on a night out, this app saves time by coming to a decision for you, using rounds of voting. This project was all about teamwork, collaboration and honestly, fun!"
+      "description": "Our SoC final project. An App designed for multiple users who can't decide what to do on a night out, this app saves time by coming to a decision for you, using rounds of voting. This project was all about teamwork, collaboration and honestly, fun!",
+      "styling": "four"
     },
     {
+      "id": 5,
       "title": "LG Guitars",
       "websiteLink": "https://lgguitars.netlify.app",
       "githubLink": "https://github.com/paulg44/LGGuitars",
       "imgSrc": "",
-      "description": " This is the first website I ever created and hosted myself. Using HTML, CSS & Javascript, this is a website showcasing my Dads homemade guitars. I learnt a lot of CSS through building this website and about responsive design. I have since refactored this site into a React App, fully tested using REact Testing Library and Cypress for E2E."
+      "description": " This is the first website I ever created and hosted myself. Using HTML, CSS & Javascript, this is a website showcasing my Dads homemade guitars. I learnt a lot of CSS through building this website and about responsive design. I have since refactored this site into a React App, fully tested using REact Testing Library and Cypress for E2E.",
+      "styling": "five"
     },
     {
+      "id": 6,
       "title": "JavScript Project Bundle",
       "githubLink": "https://github.com/paulg44/javascript-project-bundle",
       "websiteLink": "https://paulg44.github.io/javascript-project-bundle/",
       "imgSrc": "",
-      "description": "A bundle of JavaScript projects, all your classic favourites like a calculator, quiz and a horror style rock, paper, scissors game. Some with a unique twist and interactive CSS. Full test suite this time courtesy of Jest & Playwright."
+      "description": "A bundle of JavaScript projects, all your classic favourites like a calculator, quiz and a horror style rock, paper, scissors game. Some with a unique twist and interactive CSS. Full test suite this time courtesy of Jest & Playwright.",
+      "styling": "six"
     },
     {
+      "id": 7,
       "title": "Local Tech Tracker",
       "githubLink": "https://github.com/paulg44/applications",
       "websiteLink": "",
@@ -53,6 +66,7 @@
       "description": "A small application to keep track of local companies that have junior roles available and their tech stack. This is a good way of being able to see if I need to learn something new. For example after my small research I am going to start digging into C#."
     },
     {
+      "id": 8,
       "title": "SoC Front End Project",
       "websiteLink": "https://github.com/paulg44/frontend_project_week_SoC",
       "githubLink": "https://github.com/paulg44/frontend_project_week_SoC",
@@ -60,6 +74,7 @@
       "description": "This project comprised of teamwork and collaboration. As a team of 4 we were given a brief to design and build a front end project. In this process we learnt about the AGILE process, scrum and generally working as a team, using branches in git, merging and resolving any resulting conflicts."
     },
     {
+      "id": 9,
       "title": "Run Tracker",
       "githubLink": "https://github.com/paulg44/running_log",
       "imgSrc": "",
@@ -67,6 +82,7 @@
     },
 
     {
+      "id": 10,
       "title": "Online Dictionary",
       "websiteLink": "https://paulg44.github.io/dictionary_app/",
       "githubLink": "https://github.com/paulg44/dictionary_app",
@@ -74,6 +90,7 @@
       "description": "This basic online dictionary was a project involving APIs, learning how to request data, parse and sort that data, then attach it to the front end for a fully working online dictionary. I also used this project to do some unit & functional testing, which I enjoyed and will be implementing into projects both previous and going forward."
     },
     {
+      "id": 11,
       "title": "My Mobile Project",
       "websiteLink": "https://paulg44.github.io/mobile-phone/",
       "githubLink": "https://github.com/paulg44/mobile-phone",
