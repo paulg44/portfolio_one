@@ -8,6 +8,12 @@ import projectsData from "../../data/projects.json";
 import "./Projects.css";
 
 function Projects() {
+  const [openProjectId, setOpenProjectId] = useState(null);
+
+  const closePopUp = () => setOpenProjectId(null);
+  const togglePopUp = (projectId) =>
+    setOpenProjectId(openProjectId === projectId ? null : projectId);
+
   const [currentPage, setCurrentPage] = useState(1);
   const projectsPerPage = 6;
 
@@ -83,22 +89,47 @@ function Projects() {
                   <button
                     style={{ color: `${project.color}` }}
                     className="projectMetadataBtn"
+                    onClick={() => togglePopUp(project.id)}
                   >
                     Learn More
                   </button>
+
+                  {/* Pop Up */}
+                  {openProjectId === project.id && (
+                    <>
+                      <div
+                        className="backgroundOverlay"
+                        onClick={closePopUp}
+                      ></div>
+                      <div
+                        className={`projectPopUpGallery ${
+                          openProjectId === project.id ? "open" : ""
+                        }`}
+                      >
+                        <button className="close" onClick={closePopUp}>
+                          &times;
+                        </button>
+                        <p>{project.description}</p>
+                        <div className="projectIcons">
+                          <a
+                            href={project.websiteLink}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <FaLink className="rightIcon" />
+                          </a>
+                          <a
+                            href={project.githubLink}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <FaGithub className="rightIcon" />
+                          </a>
+                        </div>
+                      </div>
+                    </>
+                  )}
                 </div>
-                {/* <div className="projectIcons">
-                  <a
-                    href={project.websiteLink}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaLink className="rightIcon" />
-                  </a>
-                  <a href={project.githubLink} target="_blank" rel="noreferrer">
-                    <FaGithub className="rightIcon" />
-                  </a>
-                </div> */}
               </div>
             ))}
           </div>
