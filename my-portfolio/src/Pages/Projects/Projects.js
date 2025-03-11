@@ -71,7 +71,22 @@ function Projects() {
                 key={project.id}
                 className={`projectCard card${project.styling}`}
               >
-                <img src={project.imgSrc} alt={project.imgAlt} />
+                <img src={project.imgSrc} alt={project.imgAlt} loading="lazy" />
+                <div
+                  className="projectMetadata"
+                  style={{
+                    backgroundColor: `${project.bgColor}`,
+                    color: `${project.color}`,
+                  }}
+                >
+                  <h3>{project.title}</h3>
+                  <button
+                    style={{ color: `${project.color}` }}
+                    className="projectMetadataBtn"
+                  >
+                    Learn More
+                  </button>
+                </div>
                 {/* <div className="projectIcons">
                   <a
                     href={project.websiteLink}
