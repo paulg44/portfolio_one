@@ -105,6 +105,7 @@ function Projects() {
                         className={`projectPopUpGallery ${
                           openProjectId === project.id ? "open" : ""
                         }`}
+                        style={{ backgroundColor: project.bgColor }}
                       >
                         <button className="close" onClick={closePopUp}>
                           &times;
