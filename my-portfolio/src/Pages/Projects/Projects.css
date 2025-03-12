@@ -108,7 +108,7 @@
     transform: translate(-50%, -50%);
     height: auto;
     width: auto;
-    font-size: 26px;
+    background-color: #191716;
     padding: 50px;
     text-align: center;
     display: flex;
@@ -124,6 +124,54 @@
     &.open {
       opacity: 1;
       visibility: visible;
+    }
+
+    .popUpImageContainer {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* width: 800px; */
+      /* height: 300px; */
+      margin: 10px 0;
+      gap: 12px;
+
+      .imagePopUpCard {
+        position: relative;
+        overflow: hidden;
+
+        img {
+          height: auto;
+          width: 80%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .close {
+      cursor: pointer;
+      position: absolute;
+      display: block;
+      padding: 2px 5px;
+      line-height: 20px;
+      right: -10px;
+      top: -10px;
+      font-size: 24px;
+      background-color: var(--bright-color);
+      border-radius: 18px;
+      border: 1px solid var(--bright-color);
+    }
+
+    .projectIcons {
+      font-size: 20px;
+      /* padding: 10px 30px; */
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+
+      a {
+        margin: 0 10px;
+      }
     }
   }
 

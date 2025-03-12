@@ -7,9 +7,21 @@
       "githubLink": "https://github.com/paulg44/shardlow_st_james",
       "imgSrc": "/projectImages/ssj_mobile_home_resized.png",
       "shortDescription": "Local football club, complete website. All information and socials embedded",
-      "description": "A project I have taken on for my local amateur football club. Built using React, Bootstrap Node and Express. I have also integrated some real time data from the FA website and is fully tested using Cypress and React Testing Library, including mocks for the API. Currently building a web scraper to take a specific part of Instagram URL to update the news section automatically.",
+      "description": "A project for my local amateur football club. The brief was to streamline all socials and have all information about the club in one place. This will enable the club to grow, get more eyes on the product and in turn more sponsorship. Integrated some real time data from the FA website for each team and the project also incorporates a web scraper using Playwright to scrape and display the latest Instagram posts from the club.",
       "tech": ["React", "Node.js", "Express", "Playwright"],
       "thingsLearnt": "I learnt a huge amount about web scraping and the FA's arcaic API!",
+      "popUpGallery": [
+        {
+          "id": 1,
+          "img": "/projectImages/ivys_game_homescreen.jpg",
+          "alt": "shardlow image one"
+        },
+        {
+          "id": 2,
+          "img": "/projectImages/ssj_mobile_home_resized.png",
+          "alt": "shardlow image one"
+        }
+      ],
       "styling": "one",
       "bgColor": "#5B2A68",
       "color": "#fff"
@@ -21,6 +33,18 @@
       "githubLink": "https://github.com/paulg44/drawing_game",
       "imgSrc": "/projectImages/ivys_game_homescreen.jpg",
       "description": "This is a personal project using an idea my daughter had for a game about copying an image on a screen. I have ran with this and I am building out an educational game where a user draws on a canvas then an AI checks the likeness of the users drawing. Learnt so much in this so far, with how to work with canvas, images and how to incorporate an AI into a project just to name a few.",
+      "popUpGallery": [
+        {
+          "id": 1,
+          "img": "/projectImages/ivys_game_homescreen.jpg",
+          "alt": "shardlow image one"
+        },
+        {
+          "id": 2,
+          "img": "/projectImages/ivys_game_homescreen.jpg",
+          "alt": "shardlow image one"
+        }
+      ],
       "styling": "two",
       "bgColor": "#686963",
       "color": "#000"

@@ -9,12 +9,12 @@ import "./Projects.css";
 
 function Projects() {
   const [openProjectId, setOpenProjectId] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
 
   const closePopUp = () => setOpenProjectId(null);
   const togglePopUp = (projectId) =>
     setOpenProjectId(openProjectId === projectId ? null : projectId);
 
-  const [currentPage, setCurrentPage] = useState(1);
   const projectsPerPage = 6;
 
   const totalPages = Math.ceil(projectsData.projects.length / projectsPerPage);
@@ -110,6 +110,14 @@ function Projects() {
                           &times;
                         </button>
                         <p>{project.description}</p>
+                        <div className="popUpImageContainer">
+                          {project.popUpGallery.map((projectImg, index) => (
+                            <div className="imagePopUpCard" key={index}>
+                              <img src={projectImg.img} alt={projectImg.alt} />
+                            </div>
+                          ))}
+                        </div>
+
                         <div className="projectIcons">
                           <a
                             href={project.websiteLink}
