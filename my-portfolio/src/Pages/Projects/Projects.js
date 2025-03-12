@@ -70,6 +70,10 @@ function Projects() {
 
       {/* Right Projects Section */}
       <div className="right-section">
+        <p style={{ fontSize: "10px" }}>
+          Partially finished, still under construction. Adding more data and
+          styling in due course.
+        </p>
         <div className="right-container">
           <div className="inner-project-container">
             {selectedProjects.map((project) => (

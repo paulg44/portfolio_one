@@ -5,7 +5,7 @@
       "title": "Shardlow St James",
       "websiteLink": "https://ssjfc.netlify.app/",
       "githubLink": "https://github.com/paulg44/shardlow_st_james",
-      "imgSrc": "/projectImages/ssj_mobile_home_resized.png",
+      "imgSrc": "images/galleryImages/shardlow_mobile.png",
       "shortDescription": "Local football club, complete website. All information and socials embedded",
       "description": "A project for my local amateur football club. The brief was to streamline all socials and have all information about the club in one place. This will enable the club to grow, get more eyes on the product and in turn more sponsorship. Integrated some real time data from the FA website for each team and the project also incorporates a web scraper using Playwright to scrape and display the latest Instagram posts from the club.",
       "tech": ["React", "Node.js", "Express", "Playwright"],
@@ -31,8 +31,8 @@
       "title": "Ivy's Drawing Game",
       "websiteLink": "https://ivysgame.netlify.app/",
       "githubLink": "https://github.com/paulg44/drawing_game",
-      "imgSrc": "/projectImages/ivys_game_homescreen.jpg",
-      "description": "This is a personal project using an idea my daughter had for a game about copying an image on a screen. I have ran with this and I am building out an educational game where a user draws on a canvas then an AI checks the likeness of the users drawing. Learnt so much in this so far, with how to work with canvas, images and how to incorporate an AI into a project just to name a few.",
+      "imgSrc": "/images/projectImages/ivys_game_homescreen.jpg",
+      "description": "This is a personal project using an idea my daughter had for a game about copying an image on a screen. I have ran with this and I am building out an educational game where a user draws on a canvas then an AI checks the likeness of the users drawing. Learnt so much in this so far, with how to work with canvas, base64 images and how to incorporate Gemini AI.",
       "popUpGallery": [
         {
           "id": 1,
@@ -51,13 +51,25 @@
     },
     {
       "id": 3,
-      "title": "Playwright Web Scraper",
-      "websiteLink": "",
-      "githubLink": "https://github.com/paulg44/basic-web-scraper",
-      "imgSrc": "/projectImages/scraper.image.jpg",
-      "description": "This Playwright web scraper was built to help me gain some knowledge into web scraping and data manipulation. It currently saves an array of href's on a particular page. I have also added a cron job to the GitHub Actions that runs once a day at 9pm. This tool is currently being built into my SSJ site to show the latest news from Instagram.",
-      "styling": "three",
-      "bgColor": "#0C6291",
+      "title": "Online Dictionary",
+      "websiteLink": "https://paulg44.github.io/dictionary_app/",
+      "githubLink": "https://github.com/paulg44/dictionary_app",
+      "imgSrc": "/images/galleryImages/dictionary_desktop.png",
+      "description": "This basic online dictionary was a project involving APIs, learning how to request data, parse and sort that data, then attach it to the front end for a fully working online dictionary. I also used this project to do some unit & functional testing, which I enjoyed and will be implementing into projects both previous and going forward.",
+      "popUpGallery": [
+        {
+          "id": 1,
+          "img": "/images/galleryImages/dictionary_desktop.png",
+          "alt": "shardlow image one"
+        },
+        {
+          "id": 2,
+          "img": "/images/galleryImages/dictioanry_mob.png",
+          "alt": "shardlow image one"
+        }
+      ],
+      "styling": "four",
+      "bgColor": "#5B2A68",
       "color": "#fff"
     },
     {
@@ -65,7 +77,7 @@
       "title": "AMH Decorators",
       "websiteLink": "https://amhdecorating.co.uk/",
       "githubLink": "https://github.com/paulg44/AMH-Decorators",
-      "imgSrc": "/projectImages/amh_mobile_view.png",
+      "imgSrc": "/images/galleryImages/amh_mobile.png",
       "description": "Complete website from design, build, deploy, maintain.",
       "popUpGallery": [
         {
@@ -88,8 +100,20 @@
       "title": "LG Guitars",
       "websiteLink": "https://lgguitars.netlify.app",
       "githubLink": "https://github.com/paulg44/LGGuitars",
-      "imgSrc": "/projectImages/lg_guitars_home.jpg",
+      "imgSrc": "/images/galleryImages/lg_guitars_desktop.png",
       "description": " This is the first website I ever created and hosted myself. Using HTML, CSS & Javascript, this is a website showcasing my Dads homemade guitars. I learnt a lot of CSS through building this website and about responsive design. I have since refactored this site into a React App, fully tested using REact Testing Library and Cypress for E2E.",
+      "popUpGallery": [
+        {
+          "id": 1,
+          "img": "/images/galleryImages/lg_guitars_mob.png",
+          "alt": "shardlow image one"
+        },
+        {
+          "id": 2,
+          "img": "/images/galleryImages/lg_guitars_desktop.png",
+          "alt": "shardlow image one"
+        }
+      ],
       "styling": "five",
       "bgColor": "#191716",
       "color": "#fff"
@@ -99,8 +123,20 @@
       "title": "JavScript Project Bundle",
       "githubLink": "https://github.com/paulg44/javascript-project-bundle",
       "websiteLink": "https://paulg44.github.io/javascript-project-bundle/",
-      "imgSrc": "/projectImages/saw-img.jpg",
+      "imgSrc": "/images/galleryImages/javascript_desktop.png",
       "description": "A bundle of JavaScript projects, all your classic favourites like a calculator, quiz and a horror style rock, paper, scissors game. Some with a unique twist and interactive CSS. Full test suite this time courtesy of Jest & Playwright.",
+      "popUpGallery": [
+        {
+          "id": 1,
+          "img": "/images/galleryImages/javascript_mob.png",
+          "alt": "shardlow image one"
+        },
+        {
+          "id": 2,
+          "img": "/images/galleryImages/javascript_desktop.png",
+          "alt": "shardlow image one"
+        }
+      ],
       "styling": "six",
       "bgColor": "#D81159",
       "color": "#fff"
@@ -110,8 +146,20 @@
       "title": "Local Tech Tracker",
       "githubLink": "https://github.com/paulg44/applications",
       "websiteLink": "",
-      "imgSrc": "/projectImages/trackerHomescreen.jpg",
+      "imgSrc": "images/projectImages/trackerHomescreen.jpg",
       "description": "A small application to keep track of local companies that have junior roles available and their tech stack. This is a good way of being able to see if I need to learn something new. For example after my small research I am going to start digging into C#.",
+      "popUpGallery": [
+        {
+          "id": 1,
+          "img": "/images/galleryImages/amh_our_work.png",
+          "alt": "shardlow image one"
+        },
+        {
+          "id": 2,
+          "img": "/images/galleryImages/amh_mobile.png",
+          "alt": "shardlow image one"
+        }
+      ],
       "styling": "one",
       "bgColor": "#5B2A68",
       "color": "#fff"
@@ -121,8 +169,20 @@
       "title": "SoC Front End Project",
       "websiteLink": "https://github.com/paulg44/frontend_project_week_SoC",
       "githubLink": "https://github.com/paulg44/frontend_project_week_SoC",
-      "imgSrc": "/projectImages/soc_frontend.jpg",
+      "imgSrc": "images/projectImages/soc_frontend.jpg",
       "description": "This project comprised of teamwork and collaboration. As a team of 4 we were given a brief to design and build a front end project. In this process we learnt about the AGILE process, scrum and generally working as a team, using branches in git, merging and resolving any resulting conflicts.",
+      "popUpGallery": [
+        {
+          "id": 1,
+          "img": "/images/galleryImages/amh_our_work.png",
+          "alt": "shardlow image one"
+        },
+        {
+          "id": 2,
+          "img": "/images/galleryImages/amh_mobile.png",
+          "alt": "shardlow image one"
+        }
+      ],
       "styling": "two",
       "bgColor": "#5B2A68",
       "color": "#fff"
@@ -131,8 +191,20 @@
       "id": 9,
       "title": "Run Tracker",
       "githubLink": "https://github.com/paulg44/running_log",
-      "imgSrc": "/projectImages/running_log_table.jpg",
+      "imgSrc": "images/projectImages/running_log_table.jpg",
       "description": "This is a project built using Ruby on Rails. I used to track my runs through an excel spreadsheet and I had the thought that an application to do this would be a good idea. Utilising the MVC in Rails I have built a full CRUD application with authenticated sign up and search functions, using the devise and ransack gems respectively.",
+      "popUpGallery": [
+        {
+          "id": 1,
+          "img": "/images/galleryImages/amh_our_work.png",
+          "alt": "shardlow image one"
+        },
+        {
+          "id": 2,
+          "img": "/images/galleryImages/amh_mobile.png",
+          "alt": "shardlow image one"
+        }
+      ],
       "styling": "three",
       "bgColor": "#5B2A68",
       "color": "#fff"
@@ -143,8 +215,20 @@
       "title": "Online Dictionary",
       "websiteLink": "https://paulg44.github.io/dictionary_app/",
       "githubLink": "https://github.com/paulg44/dictionary_app",
-      "imgSrc": "/projectImages/dictionary_app.jpg",
+      "imgSrc": "images/projectImages/dictionary_app.jpg",
       "description": "This basic online dictionary was a project involving APIs, learning how to request data, parse and sort that data, then attach it to the front end for a fully working online dictionary. I also used this project to do some unit & functional testing, which I enjoyed and will be implementing into projects both previous and going forward.",
+      "popUpGallery": [
+        {
+          "id": 1,
+          "img": "/images/galleryImages/amh_our_work.png",
+          "alt": "shardlow image one"
+        },
+        {
+          "id": 2,
+          "img": "/images/galleryImages/amh_mobile.png",
+          "alt": "shardlow image one"
+        }
+      ],
       "styling": "four",
       "bgColor": "#5B2A68",
       "color": "#fff"
@@ -154,9 +238,21 @@
       "title": "My Mobile Project",
       "websiteLink": "https://paulg44.github.io/mobile-phone/",
       "githubLink": "https://github.com/paulg44/mobile-phone",
-      "imgSrc": "/projectImages/home_mobile.jpg",
+      "imgSrc": "images/projectImages/home_mobile.jpg",
 
       "description": "      A re-creation of my own mobile phone. What started as some practice whilst working away has turned into a full project. Using mainly HTML & CSS I have re-created my own phone, also using some Javascript. This has been great for honing my CSS skills, and I will also be adding as much functionality as possible. Ongoing.....",
+      "popUpGallery": [
+        {
+          "id": 1,
+          "img": "/images/galleryImages/amh_our_work.png",
+          "alt": "shardlow image one"
+        },
+        {
+          "id": 2,
+          "img": "/images/galleryImages/amh_mobile.png",
+          "alt": "shardlow image one"
+        }
+      ],
       "styling": "five",
       "bgColor": "#5B2A68",
       "color": "#fff"
@@ -166,10 +262,45 @@
       "title": "ConsensUs",
       "websiteLink": "https://consensusgpt.netlify.app/",
       "githubLink": "https://github.com/BC14-GPT-great-programming-team/Great-Programming-Team-Final-Project",
-      "imgSrc": "/projectImages/consensus.jpg",
+      "imgSrc": "images/projectImages/consensus.jpg",
       "description": "Our SoC final project. An App designed for multiple users who can't decide what to do on a night out, this app saves time by coming to a decision for you, using rounds of voting. This project was all about teamwork, collaboration and honestly, fun!",
+      "popUpGallery": [
+        {
+          "id": 1,
+          "img": "/images/galleryImages/amh_our_work.png",
+          "alt": "shardlow image one"
+        },
+        {
+          "id": 2,
+          "img": "/images/galleryImages/amh_mobile.png",
+          "alt": "shardlow image one"
+        }
+      ],
       "styling": "six",
       "bgColor": "#5B2A68",
+      "color": "#fff"
+    },
+    {
+      "id": 13,
+      "title": "Playwright Web Scraper",
+      "websiteLink": "",
+      "githubLink": "https://github.com/paulg44/basic-web-scraper",
+      "imgSrc": "images/projectImages/scraper.image.jpg",
+      "description": "This Playwright web scraper was built to help me gain some knowledge into web scraping and data manipulation. It currently saves an array of href's on a particular page. I have also added a cron job to the GitHub Actions that runs once a day at 9pm. This tool is currently being built into my SSJ site to show the latest news from Instagram.",
+      "popUpGallery": [
+        {
+          "id": 1,
+          "img": "/images/galleryImages/amh_our_work.png",
+          "alt": "shardlow image one"
+        },
+        {
+          "id": 2,
+          "img": "/images/galleryImages/amh_mobile.png",
+          "alt": "shardlow image one"
+        }
+      ],
+      "styling": "three",
+      "bgColor": "#0C6291",
       "color": "#fff"
     }
   ]
