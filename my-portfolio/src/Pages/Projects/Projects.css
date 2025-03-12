@@ -162,18 +162,6 @@
       border-radius: 18px;
       border: 1px solid var(--bright-color);
     }
-
-    .projectIcons {
-      font-size: 20px;
-      /* padding: 10px 30px; */
-      position: absolute;
-      left: 10px;
-      bottom: 10px;
-
-      a {
-        margin: 0 10px;
-      }
-    }
   }
 
   .inner-project-container {
@@ -248,6 +236,24 @@
           border: 2px solid var(--bright-color);
           border-radius: 20px;
           padding: 10px;
+          transition: scale 0.2s ease-in-out;
+
+          &:hover {
+            scale: 1.02;
+          }
+
+          &:active {
+            scale: 0.9;
+          }
+        }
+
+        .projectIcons {
+          font-size: 20px;
+          padding-top: 20px;
+
+          a {
+            margin: 10px;
+          }
         }
       }
 

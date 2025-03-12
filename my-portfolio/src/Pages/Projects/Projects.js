@@ -6,6 +6,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
 import projectsData from "../../data/projects.json";
 import "./Projects.css";
+import hannahImg from "../../IMG/hannah_mob.jpg";
 
 function Projects() {
   const [openProjectId, setOpenProjectId] = useState(null);
@@ -34,7 +35,7 @@ function Projects() {
       {/* <!-- Project on the left section --> */}
       <section className="left-section">
         <div className="left-container">
-          {/* <img src={hannahImg} alt="mobile project main" /> */}
+          <img src={hannahImg} alt="mobile project main" />
           <h3>
             Hannah <span>Jane</span> Garton
             <a
@@ -97,6 +98,24 @@ function Projects() {
                   >
                     Learn More
                   </button>
+                  <div className="projectIcons">
+                    <a
+                      style={{ color: project.color }}
+                      href={project.websiteLink}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaLink className="rightIcon" />
+                    </a>
+                    <a
+                      style={{ color: project.color }}
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaGithub className="rightIcon" />
+                    </a>
+                  </div>
 
                   {/* Pop Up */}
                   {openProjectId === project.id && (
@@ -121,23 +140,6 @@ function Projects() {
                               <img src={projectImg.img} alt={projectImg.alt} />
                             </div>
                           ))}
-                        </div>
-
-                        <div className="projectIcons">
-                          <a
-                            href={project.websiteLink}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            <FaLink className="rightIcon" />
-                          </a>
-                          <a
-                            href={project.githubLink}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            <FaGithub className="rightIcon" />
-                          </a>
                         </div>
                       </div>
                     </>
