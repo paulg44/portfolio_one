@@ -337,7 +337,7 @@
 }
 
 /* Media Queries */
-@media (max-width: 1200px) {
+@media (max-width: 650px) {
   .projects {
     display: block;
     margin: 0;
@@ -354,7 +354,7 @@
   }
 
   .projects img {
-    width: 50%;
+    width: 30%;
     margin: 10px 0;
     animation: fade-in 1s ease-in;
   }
@@ -369,20 +369,22 @@
 
   .middle-section h2 {
     transform: rotate(0deg);
+    font-size: 60px;
+    text-align: center;
     margin: 0;
     animation: fade-in 4s ease-in;
   }
 
   .right-section {
     margin: 0;
-    margin-top: 260px;
-    margin-bottom: 300px;
+    margin-top: 60px;
+    margin-bottom: 30px;
   }
 
   .left-section,
   .middle-section {
     width: fit-content;
-    margin: 30px 0;
+    margin: 30px 0 0;
   }
 
   .right-section {
@@ -390,10 +392,37 @@
   }
   .right-container {
     margin: 0 30px;
-  }
 
-  .inner-project-container {
-    flex-direction: column;
+    .inner-project-container {
+      /* height: 80vh; */
+
+      .projectCard {
+        &.cardone {
+          grid-column: span 6;
+          grid-row: span 8;
+        }
+        &.cardtwo {
+          grid-column: span 6;
+          grid-row: span 3;
+        }
+        &.cardthree {
+          grid-column: span 3;
+          grid-row: span 3;
+        }
+        &.cardfour {
+          grid-column: span 3;
+          grid-row: span 2;
+        }
+        &.cardfive {
+          grid-column: span 6;
+          grid-row: span 2;
+        }
+        &.cardsix {
+          grid-column: span 6;
+          grid-row: span 2;
+        }
+      }
+    }
   }
 
   .individual-project h3 {
