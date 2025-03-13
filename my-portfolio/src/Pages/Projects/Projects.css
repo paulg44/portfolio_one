@@ -393,9 +393,12 @@
   .right-container {
     margin: 0 30px;
 
-    .inner-project-container {
-      /* height: 80vh; */
+    .projectPopUpGallery {
+      width: 350px;
+      padding: 10px;
+    }
 
+    .inner-project-container {
       .projectCard {
         &.cardone {
           grid-column: span 6;
