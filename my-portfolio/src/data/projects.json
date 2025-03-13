@@ -145,7 +145,6 @@
       "id": 7,
       "title": "Local Tech Tracker",
       "githubLink": "https://github.com/paulg44/applications",
-      "websiteLink": "",
       "imgSrc": "/images/projectImages/trackerHomescreen.png",
       "description": "A small application to keep track of local companies that have junior roles available and their tech stack. This is a good way of being able to see if I need to learn something new. Once I have entered a lot of data I can then see if I am still on the right track with my learnings.",
       "popUpGallery": [
@@ -155,33 +154,33 @@
           "alt": "shardlow image one"
         }
       ],
-      "styling": "one",
-      "bgColor": "#5B2A68",
+      "styling": "seven",
+      "bgColor": "#673C4F",
+      "color": "#fff"
+    },
+    {
+      "id": 8,
+      "title": "Playwright Web Scraper",
+      "githubLink": "https://github.com/paulg44/basic-web-scraper",
+      "imgSrc": "images/projectImages/scraper.image.jpg",
+      "description": "This Playwright web scraper was built to help me gain some knowledge into web scraping and data manipulation. It currently saves an array of href's on a particular page. I have also added a cron job to the GitHub Actions that runs once a day at 9pm. This tool has been built into my SSJ site to show the latest news from Instagram.",
+      "popUpGallery": [
+        {
+          "id": 1,
+          "img": "/images/galleryImages/scraper.png",
+          "alt": "shardlow image one"
+        }
+      ],
+      "styling": "eight",
+      "bgColor": "#483D03",
       "color": "#fff"
     },
     {
       "id": 9,
-      "title": "Run Tracker",
-      "githubLink": "https://github.com/paulg44/running_log",
-      "imgSrc": "/images/projectImages/running_log_table.jpg",
-      "description": "This is a project built using Ruby on Rails for a technical test. I used to track my runs through an excel spreadsheet and I had the thought that an application to do this would be a good idea. Utilising the MVC in Rails I have built a full CRUD application with authenticated sign up and search functions, using the devise and ransack gems respectively.",
-      "popUpGallery": [
-        {
-          "id": 1,
-          "img": "/images/projectImages/running_log_table.jpg",
-          "alt": "shardlow image one"
-        }
-      ],
-      "styling": "three",
-      "bgColor": "#5B2A68",
-      "color": "#fff"
-    },
-    {
-      "id": 11,
       "title": "My Mobile Project",
       "websiteLink": "https://paulg44.github.io/mobile-phone/",
       "githubLink": "https://github.com/paulg44/mobile-phone",
-      "imgSrc": "images/projectImages/home_mobile.jpg",
+      "imgSrc": "/images/galleryImages/mob_one.png",
 
       "description": "A re-creation of my own mobile phone. What started as some practice whilst working away has turned into a full project. Using mainly HTML & CSS I have re-created my own phone, also using some Javascript. This has been great for honing my CSS skills, and I will also be adding as much functionality as possible. Ongoing.....",
       "popUpGallery": [
@@ -201,12 +200,12 @@
           "alt": "shardlow image one"
         }
       ],
-      "styling": "five",
-      "bgColor": "#5B2A68",
-      "color": "#fff"
+      "styling": "nine",
+      "bgColor": "#AB9B96",
+      "color": "#000"
     },
     {
-      "id": 12,
+      "id": 10,
       "title": "ConsensUs",
       "websiteLink": "https://consensusgpt.netlify.app/",
       "githubLink": "https://github.com/BC14-GPT-great-programming-team/Great-Programming-Team-Final-Project",
@@ -224,27 +223,26 @@
           "alt": "shardlow image one"
         }
       ],
-      "styling": "six",
-      "bgColor": "#5B2A68",
+      "styling": "ten",
+      "bgColor": "#183642",
       "color": "#fff"
     },
     {
-      "id": 13,
-      "title": "Playwright Web Scraper",
-      "websiteLink": "",
-      "githubLink": "https://github.com/paulg44/basic-web-scraper",
-      "imgSrc": "images/projectImages/scraper.image.jpg",
-      "description": "This Playwright web scraper was built to help me gain some knowledge into web scraping and data manipulation. It currently saves an array of href's on a particular page. I have also added a cron job to the GitHub Actions that runs once a day at 9pm. This tool has been built into my SSJ site to show the latest news from Instagram.",
+      "id": 11,
+      "title": "Run Tracker",
+      "githubLink": "https://github.com/paulg44/running_log",
+      "imgSrc": "/images/projectImages/running_log_table.jpg",
+      "description": "This is a project built using Ruby on Rails for a technical test. I used to track my runs through an excel spreadsheet and I had the thought that an application to do this would be a good idea. Utilising the MVC in Rails I have built a full CRUD application with authenticated sign up and search functions, using the devise and ransack gems respectively.",
       "popUpGallery": [
         {
           "id": 1,
-          "img": "/images/galleryImages/scraper.png",
+          "img": "/images/projectImages/running_log_table.jpg",
           "alt": "shardlow image one"
         }
       ],
-      "styling": "three",
-      "bgColor": "#0C6291",
-      "color": "#fff"
+      "styling": "eleven",
+      "bgColor": "#899878",
+      "color": "#000"
     }
   ]
 }
