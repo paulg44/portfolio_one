@@ -95,14 +95,18 @@ function Projects() {
                     Learn More
                   </button>
                   <div className="projectIcons">
-                    <a
-                      style={{ color: project.color }}
-                      href={project.websiteLink}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaLink className="rightIcon" />
-                    </a>
+                    {/* If truthy the link will render fro projects that have one */}
+                    {project.websiteLink && (
+                      <a
+                        style={{ color: project.color }}
+                        href={project.websiteLink}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FaLink className="rightIcon" />
+                      </a>
+                    )}
+
                     <a
                       style={{ color: project.color }}
                       href={project.githubLink}
