@@ -7,6 +7,7 @@ import dotenv from "dotenv";
 import fs from "fs-extra";
 import OpenAI from "openai";
 import { blogRoutes } from "./routes.js";
+import handleUserKeyWords from "./handleQuestions.js";
 
 dotenv.config();
 
@@ -24,15 +25,15 @@ export const pool = new Pool({
 
 app.set("trust proxy", 1);
 
-app.use(
-  cors({
-    // origin: `${process.env.REACT_APP_FRONTEND_URL_PROD}`,
-    origin: "https://paulgarton.com",
-    credentials: true,
-  })
-);
+// app.use(
+//   cors({
+//     // origin: `${process.env.REACT_APP_FRONTEND_URL_PROD}`,
+//     origin: "https://paulgarton.com",
+//     credentials: true,
+//   })
+// );
 
-// app.use(cors());
+app.use(cors());
 app.options("*", cors());
 app.use(express.json());
 
@@ -52,16 +53,7 @@ app.post("/user-question", async (req, res) => {
     return res.status(400).send({ error: "Question is required" });
   }
 
-  let userKeyWords = "";
-  let foundUserKeyWords = false;
-
-  // Add a question for each likely thing to be asked
-  if (question.toLowerCase().includes("tech stack")) {
-    userKeyWords = `Paul's main tech stack includes ${portfolioData.techAndInterview.techStack.join(
-      ", "
-    )}`;
-    foundUserKeyWords = true;
-  }
+  const { userKeyWords, foundUserKeyWords } = handleUserKeyWords(question);
 
   const messages = [
     {

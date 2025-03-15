@@ -58,7 +58,7 @@
   "projects": [
     {
       "name": "Shardlow St James FC",
-      "description": "A complete website for a local amateur football club. It uses the FA API to integrate the 4 teams fixtures, results and table data. Has a web scraper built using Playwright to scrape data from Instagram.",
+      "description": "A complete website for a local amateur football club. It uses the FA API to integrate the 4 teams fixtures, results and table data. Has a web scraper built using Playwright to scrape data from Instagram. It is fully responsive",
       "techStack": {
         "frontend": ["React", "Framer Motion", "React Router", "React Spring,"],
         "backend": [
@@ -72,11 +72,12 @@
           "simple-git"
         ]
       },
+      "learned": "Mostly on this project I learnt about the aspect of web scraping. Not only from my side but from the other side where companies are trying not to have their data scraped as their data is the biggest commodity. I also learnt about using React Spring for the object animations on each page. Lastly I learned how to collaborate with a customer that doesn't exactly know what they want, how to parse out the details and provide them with a website they envisioned.",
       "website": "https://ssjfc.co.uk/"
     },
     {
       "name": "AMH Decorating",
-      "description": "A complete website for a local painter and decorator to be more visual and generate more custom. Built from scratch using Figma and designed in collaboration with the client",
+      "description": "A complete website for a local painter and decorator to be more visual and generate more custom. Built from scratch using Figma and designed in collaboration with the client. It is fully responsive.",
       "techStack": {
         "frontend": ["React", "React Router"],
         "backend": "No backend"
@@ -90,6 +91,47 @@
         "frontend": ["React", "React Router", "Konva", "react-colorful"],
         "backend": ["Node.js", "Express", "Gemini AI", "fs-extra"]
       },
+      "learned": "So much!! How to use a canvas in React, how to integrate AI into a project. How to transform an image to a base64 string so that it can be used and manipulated elsewhere. I am now moving forward onto the UI/UX so I have a good working prototype before I move into other game modes, auth and more data.",
+      "website": "https://ivysgame.netlify.app/"
+    },
+    {
+      "name": "LG Guitars",
+      "description": "The first ever site I created, initially just using HTML and CSS. I later converted this site into a React website and it is fully responsive. It is a site to showcase my Dad's handmade guitars (built in his shed).",
+      "techStack": {
+        "frontend": ["React", "React Router", "Nock", "Framer Motion"],
+        "backend": "No backend"
+      },
+      "learned": "As this was my first site, I was purely focused on the frontend and how it looked, getting everything pixel perfect as I saw. I also learnt how to deploy my very first site using Netlify",
+      "website": "https://lgguitars.netlify.app/"
+    },
+    {
+      "name": "Online Dictionary",
+      "description": "One of my earlier projects was to build an online dictionary. The reason for this was to learn more about API's, how to work with them and how to parse the data. I even added a button for the phonetic sound to be played. I have taken this forward into my educational game. For this project I also added TypeScript for the different types of things to come from the API. I added a lot of testing for this application also",
+      "techStack": {
+        "frontend": ["React", "Playwright", "TypeScript", "Cypress"],
+        "backend": "No backend"
+      },
+      "learned": "How to parse data effectively and display it on the client side.",
+      "website": "https://paulg44.github.io/dictionary_app/"
+    },
+    {
+      "name": "JavaScript Project Bundle",
+      "description": "This is a collection of all your favourite starter applications. From rock, paper, scissors to a quiz app. Some have a little twist. As an example I made the rock, paper, scissors game a horror game based on the franchise of Saw. It was a lot of fun to do and I enjoy making games like this.",
+      "techStack": {
+        "frontend": ["JavaScript", "HTML", "CSS"],
+        "backend": "No backend"
+      },
+      "learned": "Plenty of JavaScript methods, how to manipulate the DOM, game mechanics and functions. A lot about simpple vanilla JavaScript",
+      "website": "https://paulg44.github.io/javascript-project-bundle/"
+    },
+    {
+      "name": "Consensus",
+      "description": "Our School of Code final project. An App designed for multiple users who can't decide what to do on a night out, this app saves time by coming to a decision for you, using rounds of voting. This project was all about teamwork, collaboration and honestly, fun! I had a great time working remotely with diverse bunch of people. It's amazing to see what can be achieved in 5 short weeks and what you can learn in the process.",
+      "techStack": {
+        "frontend": ["React", "React Router"],
+        "backend": ["Supabase"]
+      },
+      "learned": "This was all about working within a team, working together, finding each others strengths. Giving and receiving feedback. From a personal perspective I learned a lot about UI/UX and how a user would actually use and run through out application.",
       "website": "https://ivysgame.netlify.app/"
     }
   ]
