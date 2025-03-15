@@ -39,7 +39,7 @@ export default function Chatbot() {
     if (!userQuestion.trim()) return;
 
     const waitingOnMessageArr = [
-      "Thinking me duck...",
+      "Thinking...",
       "Hmmmmm...",
       "Hand on a sec...",
     ];
@@ -115,7 +115,7 @@ export default function Chatbot() {
               &times;
             </button>
             <ul className="chatBox">
-              <li>Awaiting user message....</li>
+              <li>Ey up me duck. Ask me about my projects...if you like</li>
               {chat.map((chatText, index) => (
                 <li key={index}>
                   <p>{chatText}</p>
