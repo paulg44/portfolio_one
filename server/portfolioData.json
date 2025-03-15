@@ -19,7 +19,7 @@
       "DIY"
     ],
     "bio": "I am a software developer based in Derby. I have spent the previous years of my career as a painter and decorator and I'm ready to wash out the rollers and brushes one more time and swap the brushstrokes for keystrokes. I have a passion for being creative and really enjoy all aspects of software development, from design all the way through to code.",
-    "goals": "I am looking for my first role within the tech community. I want to make a difference in the world through software and give back to the same kind of communities I grew up in."
+    "goals": "I am looking for my first role within the tech community. I want to make a difference in the world through software and give back to the same kind of communities I grew up in. I'm not looking for just a job, I want a career, to be part of something and follow my passion."
   },
   "techAndInterview": {
     "techStack": [
@@ -53,7 +53,9 @@
         "name": "Team Collaboration",
         "example": "Working alongside other trades is the same as working alongside other devs. You always need to know a little about the person you are working alongside's job. As an example in painting I need to know about joinery to make sure we are working seamlessly together. This would be the same if I was a frontend developer on a project, I would need to collaborate and have at least a basic understanding of what the backend developer is doing and what the backend is doing in general."
       }
-    ]
+    ],
+    "testing": "",
+    "why": ""
   },
   "projects": [
     {
