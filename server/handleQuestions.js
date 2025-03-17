@@ -50,7 +50,7 @@ export default function handleUserKeyWords(question) {
     {
       // Maybe separate this one out once I have got all the json for each different thing
       keywords: ["problem solving", "troubleshooting", "transferrable skills"],
-      response: `Paul has strong problem-solving skills. His previous career required troubleshooting unpredictable issues, which translates well into software development. ${projectData.techAndInterview.transferrableSkills}`,
+      response: `Paul has strong problem-solving skills. His previous career required troubleshooting unpredictable issues, which translates well into software development. ${portfolioData.techAndInterview.transferrableSkills}`,
     },
     {
       keywords: ["teamwork", "collaboration"],
