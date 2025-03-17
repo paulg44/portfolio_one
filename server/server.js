@@ -25,15 +25,15 @@ export const pool = new Pool({
 
 app.set("trust proxy", 1);
 
-// app.use(
-//   cors({
-//     // origin: `${process.env.REACT_APP_FRONTEND_URL_PROD}`,
-//     origin: "https://paulgarton.com",
-//     credentials: true,
-//   })
-// );
+app.use(
+  cors({
+    // origin: `${process.env.REACT_APP_FRONTEND_URL_PROD}`,
+    origin: "https://paulgarton.com",
+    credentials: true,
+  })
+);
 
-app.use(cors());
+// app.use(cors());
 app.options("*", cors());
 app.use(express.json());
 
