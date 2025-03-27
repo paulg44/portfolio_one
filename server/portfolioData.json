@@ -88,7 +88,7 @@
     },
     {
       "name": "Ivy's Game",
-      "description": "I asked my daughter to come up with a game and she had the idea of a user copying an image and getting a score based on the likeness. So I ran with that and did some research into an educational game. It led me down the path of learning how to use a canvas in React, how to send data to and from client and server, how to parse that data and get exactly what I want. How to transform aan image to a base64 string, and how to use an AI engine to compare the image. Among many other things.",
+      "description": "I asked my daughter to come up with a game and she had the idea of a user copying an image and getting a score based on the likeness. So I ran with that and did some research into an educational game. It led me down the path of learning how to use a canvas in React, how to send data to and from client and server, how to parse that data and get exactly what I want. How to transform aan image to a base64 string, and how to use an AI engine to compare the image. Among many other things. I have user tested this with my own children and nephews, nieces. Getting some great feedback and starting to implement more visual que's and aide's to make it easier for the children who are still learning to read.",
       "techStack": {
         "frontend": ["React", "React Router", "Konva", "react-colorful"],
         "backend": ["Node.js", "Express", "Gemini AI", "fs-extra"]
