@@ -13,7 +13,7 @@ function Contact() {
     const handleWeatherApi = async () => {
       try {
         const response = await fetch(
-          `http://api.weatherapi.com/v1/current.json?key=0b2b01cc290f465285d182029250604&q=derby`
+          `http://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API_KEY}&q=derby`
         );
         const data = await response.json();
         console.log(data);
@@ -24,7 +24,7 @@ function Contact() {
     };
 
     // Get the list of condition texts and add more to the list. Maybe make it a json file and import it for cleaner code? Also is there a way to get the users local weather?
-    if (weather === "Sunny") {
+    if (weather === "Sunny" || "Clear") {
       setBackgroundImage(sunnyBG);
     } else if (weather === "Light rain" || "Moderate rain" || "Heavy rain") {
       setBackgroundImage(rainyBG);
@@ -46,9 +46,6 @@ function Contact() {
       <div className="contact-form">
         <ContactForm />
       </div>
-      {/* <a href="mailto: paulgarton1984@hotmail.com" className="email">
-        paulgarton1984@hotmail.com
-      </a> */}
     </section>
   );
 }
