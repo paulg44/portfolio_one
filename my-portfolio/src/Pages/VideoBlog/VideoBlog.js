@@ -8,7 +8,7 @@ export function VideoBlog() {
         width={420}
         height={315}
         title="test video"
-        src="https://www.youtube.com/embed?v=0HCOzB0noiI&list=PLCuUzw-sRFKiKKSto_kNEDnh17_EgmVvl"
+        src="https://www.youtube.com/embed/zfxN46t3Xps?si=hlYuP7i-KrWEHAD5"
       ></iframe>
     </div>
   );
